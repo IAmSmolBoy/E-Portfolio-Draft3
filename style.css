@@ -1,7 +1,30 @@
 body{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,133,1) 0%, rgba(0,212,255,1) 100%);
     object-fit: cover;
+    overflow:hidden;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
 }
 img.logo{
-    transform: scale(0.75);
+    position:relative;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+h2.Intro{
+    color: white;
+}
+a#ViewMore{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: white solid 1px;
+    border-radius: 10px;
+    transition: 1s;
+}
+a#ViewMore:hover{
+    color: blue;
+    background-color: white;
 }

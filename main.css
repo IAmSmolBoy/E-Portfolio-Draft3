@@ -1,3 +1,21 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,133,1) 0%, rgba(0,212,255,1) 100%)
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,133,1) 0%, rgba(0,212,255,1) 100%);
+    object-fit: cover;
+    text-align: center;
+}
+div#navbar{
+    position: relative;
+    height: min-content;
+    background-color: white;
+}
+a.NavbarContent{
+    text-decoration: none;
+    color: blue;
+    text-align: unset;
+}
+h2#Name{
+    color: white;
 }
