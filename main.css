@@ -1,3 +1,8 @@
+@keyframes DropDown{
+    from{opacity: 0;}
+    to{opacity:1 ;}
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -5,17 +10,72 @@ body{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,133,1) 0%, rgba(0,212,255,1) 100%);
     object-fit: cover;
     text-align: center;
+    overflow: hidden;
 }
 div#navbar{
+    width: 100vw;
+    left: 0;
     position: relative;
     height: min-content;
     background-color: white;
 }
 a.NavbarContent{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-decoration: none;
     color: blue;
     text-align: unset;
+    transition: 1s;
+}
+a.NavbarContent:hover{
+    text-decoration: underline;
 }
 h2#Name{
     color: white;
+    font-weight: bold;
+}
+div#ThreeLines{
+    width:min-content;
+    float: right;
+    margin-right: 20px;
+}
+#one{
+    width: 30px;
+}
+#two{
+    width: 20px;
+}
+#three{
+    width: 25px;
+}
+div.threeLines{
+    position: relative;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: blue;
+    height: 5px;
+    border-radius: 20px;
+    transition: 1s;
+}
+#ThreeLines:hover div{
+    width:30px;
+}
+#ThreeLines:hover .DropDown{
+    display:inline-block;
+}
+.DropDown{
+    width: min-content;
+    color: blue;
+    display: none;
+}
+.DropDown:hover{
+    cursor: pointer;
+}
+div#DropDownMenu{
+    padding-top: 5px;
+    margin-left: auto;
+    width: min-content;
+    background-color: white;
 }

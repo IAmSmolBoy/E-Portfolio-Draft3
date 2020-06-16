@@ -8,15 +8,47 @@
 </head>
 <body>
     <div id="navbar">
-        <a href="" class="NavbarContent">back</a>
-        <a href="" class="NavbarContent">Certificates</a>
-        <a href="" class="NavbarContent"></a>
-        <a href="" class="NavbarContent"></a>
-        <a href="" class="NavbarContent"></a>
-        <a href="" class="NavbarContent"></a>
+        <a href="index.html" id="back" class="NavbarContent">Hong Rui's portfolio</a>
+        <div id="ThreeLines">
+            <div class="threeLines" id="one"></div>
+            <div class="threeLines" id="two"></div>
+            <div class="threeLines" id="three"></div>
+        </div>
+    </div>
+    <div id="DropDownMenu">
+        <div class="DropDown">achievements</div>
+        <div class="DropDown">There</div>
+        <div class="DropDown">nigga</div>
     </div>
     <div id="content">
         <h2 id="Name">Hello there, I am Goh Hong Rui from Bedok View Secondary School, here to introduce myself to you.</h2>
     </div>
+    <script>
+        const DropDown=document.getElementsByClassName("DropDown")
+        const ThreeLines=document.getElementById("ThreeLines")
+        const DropDownMenu=document.getElementById("DropDownMenu")
+        ThreeLines.addEventListener("mouseover",(e)=>{
+            for(i=1;i<=DropDown.length;i++){
+                DropDown[i-1].style.display="block"
+                DropDown[i-1].style.animation="DropDown 1s linear"
+            }
+        })
+        ThreeLines.addEventListener("mouseout",(e)=>{
+            for(i=1;i<=DropDown.length;i++){
+                DropDown[i-1].style.display="none"
+            }
+        })
+        DropDownMenu.addEventListener("mouseover",(e)=>{
+            for(i=1;i<=DropDown.length;i++){
+                DropDown[i-1].style.display="block"
+                DropDown[i-1].style.animation="DropDown 1s linear"
+            }
+        })
+        DropDownMenu.addEventListener("mouseout",(e)=>{
+            for(i=1;i<=DropDown.length;i++){
+                DropDown[i-1].style.display="none"
+            }
+        })
+    </script>
 </body>
 </html>
