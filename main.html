@@ -30,23 +30,25 @@
         ThreeLines.addEventListener("mouseover",(e)=>{
             for(i=1;i<=DropDown.length;i++){
                 DropDown[i-1].style.display="block"
-                DropDown[i-1].style.animation="DropDown 1s linear"
+                DropDownMenu.style.animation="DropDown 1s linear"
             }
         })
         ThreeLines.addEventListener("mouseout",(e)=>{
             for(i=1;i<=DropDown.length;i++){
                 DropDown[i-1].style.display="none"
+                DropDownMenu.style.animation=""
             }
         })
         DropDownMenu.addEventListener("mouseover",(e)=>{
             for(i=1;i<=DropDown.length;i++){
                 DropDown[i-1].style.display="block"
-                DropDown[i-1].style.animation="DropDown 1s linear"
+                DropDownMenu.style.animation=""
             }
         })
         DropDownMenu.addEventListener("mouseout",(e)=>{
             for(i=1;i<=DropDown.length;i++){
                 DropDown[i-1].style.display="none"
+                DropDownMenu.style.animation=""
             }
         })
     </script>
