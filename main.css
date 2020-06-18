@@ -1,6 +1,6 @@
 @keyframes DropDown{
-    from{opacity: 0;transform: translateY(-20);}
-    to{opacity:1 ;transform: translateY(0);}
+    from{opacity: 0;transform: translateY(-20px) rotateY(180deg);}
+    to{opacity:1 ;transform: translateY(0px) rotateY(0deg);}
 }
 
 html{
@@ -32,6 +32,8 @@ a.NavbarContent:hover{
     text-decoration: underline;
 }
 h2#Name{
+    top:10vh;
+    position: absolute;
     color: white;
     font-weight: bold;
 }

@@ -27,28 +27,19 @@
         const DropDown=document.getElementsByClassName("DropDown")
         const ThreeLines=document.getElementById("ThreeLines")
         const DropDownMenu=document.getElementById("DropDownMenu")
-        ThreeLines.addEventListener("mouseover",(e)=>{
-            for(i=1;i<=DropDown.length;i++){
-                DropDown[i-1].style.display="block"
-                DropDownMenu.style.animation="DropDown 1s linear"
+        ThreeLines.addEventListener("click",(e)=>{
+            if(DropDownMenu.style.animation!=""){
+                for(i=1;i<=DropDown.length;i++){
+                        DropDownMenu.style.animation=""
+                        DropDown[i-1].style.display="none"
+                }
             }
-        })
-        ThreeLines.addEventListener("mouseout",(e)=>{
-            for(i=1;i<=DropDown.length;i++){
-                DropDown[i-1].style.display="none"
-                DropDownMenu.style.animation=""
-            }
-        })
-        DropDownMenu.addEventListener("mouseover",(e)=>{
-            for(i=1;i<=DropDown.length;i++){
-                DropDown[i-1].style.display="block"
-                DropDownMenu.style.animation=""
-            }
-        })
-        DropDownMenu.addEventListener("mouseout",(e)=>{
-            for(i=1;i<=DropDown.length;i++){
-                DropDown[i-1].style.display="none"
-                DropDownMenu.style.animation=""
+            else{
+                for(i=1;i<=DropDown.length;i++){
+                    DropDown[i-1].style.display="block"
+                    DropDownMenu.style.animation="DropDown 0.5s linear"
+                    DropDownMenu.style.animationFillMode="forwards"
+                }
             }
         })
     </script>
