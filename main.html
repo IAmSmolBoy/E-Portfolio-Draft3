@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>About Me</title>
 </head>
 <body>
@@ -22,6 +23,9 @@
     </div>
     <div id="content">
         <h2 id="Name">Hello there, I am Goh Hong Rui from Bedok View Secondary School, here to introduce myself to you.</h2>
+        
+        <div id="Tests">Dude</div>
+        <div id="Test" data-aos="fade-up">Dude</div>
     </div>
     <script>
         const DropDown=document.getElementsByClassName("DropDown")
@@ -42,6 +46,13 @@
                 }
             }
         })
+    </script>
+
+
+    <!-- Initialising AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

@@ -10,7 +10,6 @@ body{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,133,1) 0%, rgba(0,212,255,1) 100%);
     object-fit: cover;
     text-align: center;
-    overflow: hidden;
 }
 div#navbar{
     width: 100vw;
@@ -32,6 +31,8 @@ a.NavbarContent:hover{
     text-decoration: underline;
 }
 h2#Name{
+    left: 25%;
+    width: 50%;
     top:10vh;
     position: absolute;
     color: white;
@@ -80,4 +81,12 @@ div#DropDownMenu{
     margin-left: auto;
     width: min-content;
     background-color: white;
+}
+div#Test{
+    background-color: black;
+    color: white;
+}
+div#Tests{
+    background-color: black;
+    height: 1000px;
 }
