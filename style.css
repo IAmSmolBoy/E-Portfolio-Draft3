@@ -4,26 +4,23 @@
 }
 
 body{
-    background: gray;
+    background:linear-gradient(to right, #009FFD,#2A2A72);
     object-fit: cover;
-    overflow:hidden;
     text-align: center;
-    text-align: center;
-    width: 100vw;
-    margin: 0;
     font-family: 'MuseoModerno', cursive;
+    animation:Expand 0.5s linear;
+    color:white;
 }
 a{
     text-decoration: none;
-    color:white;
     position: absolute;
     top:45vh;
     width: 48%;
     left: 30vw;
-    transition: 0.5s;
+    transition: 1s;
+    color:white;
 }
 a:hover{
     cursor: pointer;
     text-decoration: underline;
-    background-color: black;
 }

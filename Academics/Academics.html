@@ -7,7 +7,18 @@
     <title>Academic Achievements</title>
 </head>
 <body>
-    <section id="Academics">
+    <nav id="navbar">
+        <div id="ThreeLines">
+            <div class="threeLines" id="one"></div>
+            <div class="threeLines" id="two"></div>
+            <div class="threeLines" id="three"></div>
+        </div>
+        <div id="DropDownMenu">
+            <a class="DropDown" href="#">To the top</a>
+            <a class="DropDown" id="last" href="Academics/Academics.html">Academic achievements</a>
+        </div>
+    </nav>
+    <main id="Academics">
         <header class="SectionHeaders">
             <h2>Academics</h2>
         </header>
@@ -81,6 +92,25 @@
                 <img src="TNS Outstanding Performance in P1 Mathematics.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
             </li>
         </div>
-    </section>
+    </main>
+    <script>
+        const DropDown=document.getElementsByClassName("DropDown")
+        const ThreeLines=document.getElementById("ThreeLines")
+        const DropDownMenu=document.getElementById("DropDownMenu")
+        ThreeLines.addEventListener("click",(e)=>{
+                for(i=1;i<=DropDown.length;i++){
+                    if(DropDown[i-1].style.display!="block"){
+                        DropDown[i-1].style.display="block"
+                        DropDownMenu.style.animation="DropDown 0.25s linear"
+                    }
+                    else{
+                        for(i=1;i<=DropDown.length;i++){
+                            DropDown[i-1].style.display="none"
+                        DropDownMenu.style.animation=""
+                        }
+                    }
+                }
+        })
+    </script>
 </body>
 </html>

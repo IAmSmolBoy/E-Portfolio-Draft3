@@ -9,7 +9,6 @@
 </head>
 <body>
     <nav id="navbar">
-        <a href="index.html" id="back" class="NavbarContent">Back</a>
         <div id="ThreeLines">
             <div class="threeLines" id="one"></div>
             <div class="threeLines" id="two"></div>
@@ -24,12 +23,8 @@
         <h2 id="Name">Hello there, I am Goh Hong Rui from Bedok View Secondary School, here to introduce myself to you.</h2>
     </header>
     <main id="content">
-        <div id="LeftArrow">
-            <img src="" alt="" id="left">
-        </div>
-        <div id="RightArrow">
-            <img src="" alt="" id="right">
-        </div>
+        <a id="LeftArrow"></a>
+        <a id="RightArrow"></a>
         <section id="AboutMe">
             <header class="SectionHeaders">
                 <h2 id="Intro">My Personality</h2>
@@ -134,6 +129,8 @@
 
 
     <script>
+        document.getElementById("LeftArrow").innerHTML="<"
+        document.getElementById("RightArrow").innerHTML=">"
         const DropDown=document.getElementsByClassName("DropDown")
         const ThreeLines=document.getElementById("ThreeLines")
         const DropDownMenu=document.getElementById("DropDownMenu")

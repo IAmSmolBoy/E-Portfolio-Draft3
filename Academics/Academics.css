@@ -1,21 +1,93 @@
+
 body{
-    background:gray;
+    background:linear-gradient(to right, #009FFD,#2A2A72);
     object-fit: cover;
     text-align: center;
     font-family: 'MuseoModerno', cursive;
     animation:Expand 0.5s linear;
+    color:white;
 }
 li{
     list-style: none;
 }
-section{
-    background-color: darkgray;
+main{
+    background-color: linear-gradient(to right, #009FFD,#2A2A72);
     width:min-content;
     padding-left: 1vw;
     padding-right: 1vw;
     margin: auto;
 }
 
+#navbar{
+    width: 100vw;
+    left: 0;
+    top:0;
+    position: fixed;
+    height: min-content;
+    z-index: 10000000;
+    margin: 0;
+    background:linear-gradient(to right, #009FFD,#2A2A72);
+    border-bottom: #27284D solid 2px;
+}
+a.NavbarContent{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: unset;
+    transition: 1s;
+}
+#back{
+    float: left;
+}
+#back:hover{
+    text-decoration: underline;
+}
+div#ThreeLines{
+    width:min-content;
+    float: right;
+    margin-right: 20px;
+}
+#one{
+    width: 30px;
+}
+#two{
+    width: 20px;
+}
+#three{
+    width: 25px;
+}
+div.threeLines{
+    position: relative;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:#1565B8;
+    height: 5px;
+    border-radius: 20px;
+    transition: 1s;
+}
+#ThreeLines:hover div{
+    width:30px;
+}
+.DropDown{
+    display: none;
+    text-decoration: none;
+    transition: 0.5s;
+    padding:1vh 1vw;
+}
+.DropDown:hover{
+    background-color:#009FFD;
+    color:#2A2A72;
+}
+div#DropDownMenu{
+    animation-fill-mode: forwards;
+    position: fixed;
+    right:0;
+    top:48px;
+    width: min-content;
+    background-color: #1565B8;
+}
 img.Projects{
     margin: auto;
 }
