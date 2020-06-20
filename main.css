@@ -1,14 +1,40 @@
+@keyframes DropDown{
+    0%{transform: translateY(-100px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes Expand{
+    from{transform:scale(0.01)}
+    to{transform:scale(1)}
+}
+
+::-webkit-scrollbar{
+    width:20px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color:darkgray;
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 20px;
+    background-color:gray;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
 
 html{
     scroll-behavior: smooth;
 }
 body{
-    background:black;
+    background:gray;
     object-fit: cover;
     text-align: center;
     font-family: 'MuseoModerno', cursive;
-    scrollbar-track-color: white;
-
+    animation:Expand 0.5s linear;
+}
+h2{
+    margin: 0;
 }
 li{
     padding:0;
@@ -24,15 +50,28 @@ a{
     text-decoration: none;
     color:black;
 }
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding:5vh 10vw 5vh 10vw;
+    position: relative;
+    top:7vh;
+    margin-bottom:5vh;
+    background:darkgray;
+    max-width:78vw  ;
+}
+
 #navbar{
     width: 99vw;
     left: 0;
     top:0;
     position: fixed;
     height: min-content;
-    background-color: gray;
+    background-color: darkgray;
     z-index: 10000000;
     margin: 0;
+    border-bottom: black solid 2px;
 }
 a.NavbarContent{
     font-size: 30px;
@@ -43,22 +82,16 @@ a.NavbarContent{
     text-align: unset;
     transition: 1s;
 }
-a.NavbarContent:hover{
-    text-decoration: underline;
+#back{
+    float: left;
 }
-h2#Name{
-    left: 25%;
-    width: 50%;
-    top:5vh;
-    position: relative;
-    color: white;
-    font-weight: bold;
+#back:hover{
+    text-decoration: underline;
 }
 div#ThreeLines{
     width:min-content;
     float: right;
     margin-right: 20px;
-    /* height:100%; */
 }
 #one{
     width: 30px;
@@ -74,7 +107,7 @@ div.threeLines{
     margin-left: auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: black;
+    background-color:black;
     height: 5px;
     border-radius: 20px;
     transition: 1s;
@@ -83,32 +116,44 @@ div.threeLines{
     width:30px;
 }
 .DropDown{
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
     color: black;
     display: none;
     text-decoration: none;
+    transition: 0.5s;
+    padding:1vh 1vw;
+}
+a#last{
+    border-bottom:black solid 2px;
 }
 .DropDown:hover{
-    cursor: pointer;
-    text-decoration: underline;
+    background-color:lightgray;
 }
 div#DropDownMenu{
+    animation-fill-mode: forwards;
     position: fixed;
     right:0;
     top:auto;
     width: min-content;
-    background-color: gray;
+    background-color: darkgray;
+}
+h2#Name{
+    left: 25%;
+    width: 50%;
+    top:7vh;
+    position: relative;
+    color: white;
 }
 #content{
     top:5vh;
     position: relative; 
-    width:max-content;
+    max-width: 78vw;
     margin:auto;
 }
-section{
-    padding-left:10vw ;
-    padding-right: 10vw;
-    margin-bottom:5vh;
-    background:white;
+.SectionHeaders{
+    padding-top: 7vh;
 }
 #Intro{
     margin: 0;
@@ -117,7 +162,31 @@ section{
     display:inline-block;
     top:0;
     position: relative;
+    vertical-align: top;
 }
 #PersonalityDiv{
     height:min-content;
+}
+.Projects{
+    display:block;
+}
+img.Projects{
+    margin: auto;
+}
+.HorizontalCerts{
+    padding:0;
+    max-width:40vw;
+}
+.VerticalCerts{
+    padding:0;
+    height: 70vh;
+}
+#achievements{
+    background-color: darkgray;
+}
+.Flex{
+    display:inline-flex;
+}
+img{
+    margin-left: 1vw;
 }

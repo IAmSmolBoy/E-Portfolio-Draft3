@@ -1,32 +1,29 @@
+@keyframes Contract{
+    from{transform: scale(1)}
+    to{transform:scale(0.001)}
+}
+
 body{
-    background: black;
+    background: gray;
     object-fit: cover;
     overflow:hidden;
+    text-align: center;
     text-align: center;
     width: 100vw;
     margin: 0;
     font-family: 'MuseoModerno', cursive;
 }
-img.logo{
-    position:relative;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-h2.Intro{
-    color: #03f9c8;
-}
-a#ViewMore{
+a{
     text-decoration: none;
-    color: #03f9c8;
-    padding: 5px;
-    border: #03f9c8 solid 1px;
-    border-radius: 10px;
-    transition: 1s;
+    color:white;
+    position: absolute;
+    top:45vh;
+    width: 48%;
+    left: 30vw;
+    transition: 0.5s;
 }
-a#ViewMore:hover{
-    color: black;
-    background-color: white;
-    border: white;
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: black;
 }

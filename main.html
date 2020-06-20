@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <a href="index.html" id="back" class="NavbarContent">Hong Rui's portfolio</a>
+        <a href="index.html" id="back" class="NavbarContent">Back</a>
         <div id="ThreeLines">
             <div class="threeLines" id="one"></div>
             <div class="threeLines" id="two"></div>
@@ -17,8 +17,7 @@
         </div>
         <div id="DropDownMenu">
             <a class="DropDown" href="#">To the top</a>
-            <a class="DropDown" href="#"></a>
-            <a class="DropDown" href="#achievements">achievements</a>
+            <a class="DropDown" id="last" href="#achievements">achievements</a>
         </div>
     </nav>
     <header>
@@ -26,17 +25,18 @@
     </header>
     <main id="content">
         <section id="AboutMe">
-            <h2 id="Intro">My Personality</h2>
+            <header class="SectionHeaders">
+                <h2 id="Intro">My Personality</h2>
+            </header>
             <ol class="Personalities">Enthusiastic when finding problems and solving them</ol>
             <ol class="Personalities">Friendly when with familiar faces</ol>
-            <ol class="Personalities">Shy when not with people I know</ol>
+            <ol class="Personalities">Shy when with people I don't know</ol>
             <ol class="Personalities">Inexperienced in dealing with emotions</ol>
+            <br>
             <div id="PersonalityDivDiv">
             <div class="personalityDiv" id="ProDiv">
                     <h2 id="Pros">Strengths</h2>
                     <ol class="Pros">Good at anlysing</ol>
-                    <ol class="Pros">Imaginitive</ol>
-                    <ol class="Pros">Open-minded</ol>
                     <ol class="Pros">Enthusiastic</ol>
                     <ol class="Pros">Straightforward</ol>
                 </div>
@@ -46,16 +46,6 @@
                     <ol class="Cons">Forgetful</ol>
                     <ol class="Cons">Low self-esteem</ol>
                 </div>
-            </div>
-        </section>
-        <section id="schievements">
-            <div id="Projects">
-                <header>
-                    <h2 id="ProjectHeader">Projects</h2>
-                </header>
-                <li class="projectlists"><a target=_blank href="http://fly-the-box.netlify.app/" class="achievements">Fly the box web game</a></li>
-                <li class="projectlists"><a target=_blank href="" class="achievements"></a></li>
-                <li class="projectlists"></li>
             </div>
         </section>
     </main>
@@ -70,10 +60,12 @@
                 for(i=1;i<=DropDown.length;i++){
                     if(DropDown[i-1].style.display!="block"){
                         DropDown[i-1].style.display="block"
+                        DropDownMenu.style.animation="DropDown 0.25s linear"
                     }
                     else{
                         for(i=1;i<=DropDown.length;i++){
                             DropDown[i-1].style.display="none"
+                        DropDownMenu.style.animation=""
                         }
                     }
                 }
