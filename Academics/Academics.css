@@ -1,0 +1,39 @@
+body{
+    background:gray;
+    object-fit: cover;
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    animation:Expand 0.5s linear;
+}
+li{
+    list-style: none;
+}
+section{
+    background-color: darkgray;
+    width:min-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: auto;
+}
+
+img.Projects{
+    margin: auto;
+}
+.HorizontalCerts{
+    padding:0;
+    max-width:40vw;
+}
+.VerticalCerts{
+    padding:0;
+    height: 70vh;
+}
+#achievements{
+    background-color: darkgray;
+}
+.Flex{
+    display:flex;
+    justify-content: center;
+}
+img{
+    margin-left: 1vw;
+}

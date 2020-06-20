@@ -63,7 +63,7 @@ section{
 }
 
 #navbar{
-    width: 99vw;
+    width: 100vw;
     left: 0;
     top:0;
     position: fixed;
@@ -135,7 +135,7 @@ div#DropDownMenu{
     animation-fill-mode: forwards;
     position: fixed;
     right:0;
-    top:auto;
+    top:48px;
     width: min-content;
     background-color: darkgray;
 }
@@ -169,24 +169,4 @@ h2#Name{
 }
 .Projects{
     display:block;
-}
-img.Projects{
-    margin: auto;
-}
-.HorizontalCerts{
-    padding:0;
-    max-width:40vw;
-}
-.VerticalCerts{
-    padding:0;
-    height: 70vh;
-}
-#achievements{
-    background-color: darkgray;
-}
-.Flex{
-    display:inline-flex;
-}
-img{
-    margin-left: 1vw;
 }
