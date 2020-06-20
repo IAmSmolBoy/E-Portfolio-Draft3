@@ -4,55 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
     <title>About Me</title>
 </head>
 <body>
-    <div id="navbar">
+    <nav id="navbar">
         <a href="index.html" id="back" class="NavbarContent">Hong Rui's portfolio</a>
         <div id="ThreeLines">
             <div class="threeLines" id="one"></div>
             <div class="threeLines" id="two"></div>
             <div class="threeLines" id="three"></div>
         </div>
-    </div>
-    <div id="DropDownMenu">
-        <div class="DropDown">achievements</div>
-        <div class="DropDown">There</div>
-        <div class="DropDown">nigga</div>
-    </div>
-    <div id="content">
+        <div id="DropDownMenu">
+            <a class="DropDown" href="#">To the top</a>
+            <a class="DropDown" href="#"></a>
+            <a class="DropDown" href="#achievements">achievements</a>
+        </div>
+    </nav>
+    <header>
         <h2 id="Name">Hello there, I am Goh Hong Rui from Bedok View Secondary School, here to introduce myself to you.</h2>
-        
-        <div id="Tests">Dude</div>
-        <div id="Test" data-aos="fade-up">Dude</div>
-    </div>
+    </header>
+    <main id="content">
+        <section id="AboutMe">
+            <h2 id="Intro">My Personality</h2>
+            <ol class="Personalities">Enthusiastic when finding problems and solving them</ol>
+            <ol class="Personalities">Friendly when with familiar faces</ol>
+            <ol class="Personalities">Shy when not with people I know</ol>
+            <ol class="Personalities">Inexperienced in dealing with emotions</ol>
+            <div id="PersonalityDivDiv">
+            <div class="personalityDiv" id="ProDiv">
+                    <h2 id="Pros">Strengths</h2>
+                    <ol class="Pros">Good at anlysing</ol>
+                    <ol class="Pros">Imaginitive</ol>
+                    <ol class="Pros">Open-minded</ol>
+                    <ol class="Pros">Enthusiastic</ol>
+                    <ol class="Pros">Straightforward</ol>
+                </div>
+                <div class="personalityDiv" id="ConDiv">
+                    <h2 id="Cons">Weaknesses</h2>
+                    <ol class="Cons">Introverted</ol>
+                    <ol class="Cons">Forgetful</ol>
+                    <ol class="Cons">Low self-esteem</ol>
+                </div>
+            </div>
+        </section>
+        <section id="schievements">
+            <div id="Projects">
+                <header>
+                    <h2 id="ProjectHeader">Projects</h2>
+                </header>
+                <li class="projectlists"><a target=_blank href="http://fly-the-box.netlify.app/" class="achievements">Fly the box web game</a></li>
+                <li class="projectlists"><a target=_blank href="" class="achievements"></a></li>
+                <li class="projectlists"></li>
+            </div>
+        </section>
+    </main>
+
+
+
     <script>
         const DropDown=document.getElementsByClassName("DropDown")
         const ThreeLines=document.getElementById("ThreeLines")
         const DropDownMenu=document.getElementById("DropDownMenu")
         ThreeLines.addEventListener("click",(e)=>{
-            if(DropDownMenu.style.animation!=""){
                 for(i=1;i<=DropDown.length;i++){
-                        DropDownMenu.style.animation=""
-                        DropDown[i-1].style.display="none"
+                    if(DropDown[i-1].style.display!="block"){
+                        DropDown[i-1].style.display="block"
+                    }
+                    else{
+                        for(i=1;i<=DropDown.length;i++){
+                            DropDown[i-1].style.display="none"
+                        }
+                    }
                 }
-            }
-            else{
-                for(i=1;i<=DropDown.length;i++){
-                    DropDown[i-1].style.display="block"
-                    DropDownMenu.style.animation="DropDown 0.5s linear"
-                    DropDownMenu.style.animationFillMode="forwards"
-                }
-            }
         })
     </script>
 
 
-    <!-- Initialising AOS Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>
