@@ -113,6 +113,7 @@ div.threeLines{
     height: 5px;
     border-radius: 20px;
     transition: 1s;
+    margin-right:1vw;
 }
 #ThreeLines:hover div{
     width:30px;

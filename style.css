@@ -2,6 +2,16 @@
     from{transform: scale(1)}
     to{transform:scale(0.001)}
 }
+@keyframes Rainbow{
+    0%{color:white;}
+    16%{color:red;}
+    32%{color:orange;}
+    48%{color:yellow;}
+    64%{color:green;}
+    80%{color:blue;}
+    96%{color:purple;}
+    100%{color:white;}
+}
 
 body{
     background:linear-gradient(to right, #009FFD,#2A2A72);
@@ -23,4 +33,5 @@ a{
 a:hover{
     cursor: pointer;
     text-decoration: underline;
+    animation:Rainbow 1s linear infinite;
 }

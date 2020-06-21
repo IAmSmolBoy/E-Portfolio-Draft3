@@ -42,6 +42,7 @@ body{
     text-align: center;
     font-family: 'MuseoModerno', cursive;
     animation:Expand 0.5s linear;
+    overflow: hidden;
     color:white;
 }
 a{
@@ -66,7 +67,7 @@ ol{
 }
 main{
     position: relative;
-    top:7vh;
+    top:4vh;
     margin-bottom:0;
     max-width:78vw  ;
 }
@@ -149,7 +150,7 @@ div#DropDownMenu{
     transition: 0.5s;
     float: left;
     width:max-content;
-    padding:1.5vh 1vw;
+    padding:1.2vh 1vw;
     background-color: #2A2A72;
     color:#1565B8;
 }

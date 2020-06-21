@@ -72,7 +72,7 @@ section{
     position: relative;
     top:7vh;
     margin-bottom:0;
-    max-width:78vw  ;
+    max-width:78vw ;
 }
 
 
@@ -167,6 +167,8 @@ div#OtherDropDownMenu{
 
 
 
+
+
 h2#Name{
     left: 25%;
     width: 50%;
@@ -193,4 +195,29 @@ h2#Name{
 }
 .Projects{
     display:block;
+}
+
+
+
+
+
+
+#SocialSection{
+    position: absolute;
+    left:5vw;
+    top:40vh;
+    vertical-align: middle;
+    text-align: center;
+}
+.Socials{
+    position: relative;
+    display:inline-block;
+    width:50px;
+    transition: 0.5s;
+}
+#discordlogo{
+    margin-right:10px;
+}
+img.Socials:hover{
+    transform:scale(1.5)
 }
