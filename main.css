@@ -65,10 +65,9 @@ a:hover{
     text-decoration: underline;
 }
 section{
-    padding:5vh 10vw 5vh 10vw;
     position: relative;
     top:7vh;
-    margin-bottom:5vh;
+    margin-bottom:0;
     max-width:78vw  ;
 }
 
@@ -131,16 +130,17 @@ div.threeLines{
     text-decoration: none;
     transition: 0.5s;
     padding:1vh 1vw;
+    color:#009FFD;
 }
 .DropDown:hover{
     background-color:#009FFD;
-    color:#2A2A72;
+    color:#1565B8;
 }
 div#DropDownMenu{
     animation-fill-mode: forwards;
     position: fixed;
     right:0;
-    top:48px;
+    top:35px;
     width: min-content;
     background-color: #1565B8;
 }
@@ -150,33 +150,6 @@ div#DropDownMenu{
 
 
 
-#LeftArrow{
-    color:black;
-    position: absolute;
-    top:50%;
-    left:0;
-    width: 25px;
-    height:25px;
-    border-radius: 50%;
-    background-color:white;
-}
-#RightArrow{
-    color:black;
-    position: absolute;
-    right:0;
-    top:50%;
-    width: 25px;
-    height:25px;
-    border-radius: 50%;
-    background-color:white;
-}
-#RightArrow:hover{
-    background-color: gray;
-    cursor:pointer;
-}
-#LeftArrow:hover{
-    background-color: gray;
-}
 h2#Name{
     left: 25%;
     width: 50%;
@@ -188,9 +161,6 @@ h2#Name{
     position: relative; 
     max-width: 78vw;
     margin:auto;
-}
-.SectionHeaders{
-    padding-top: 7vh;
 }
 #Intro{
     margin: 0;

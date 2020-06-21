@@ -23,8 +23,6 @@
         <h2 id="Name">Hello there, I am Goh Hong Rui from Bedok View Secondary School, here to introduce myself to you.</h2>
     </header>
     <main id="content">
-        <a id="LeftArrow"></a>
-        <a id="RightArrow"></a>
         <section id="AboutMe">
             <header class="SectionHeaders">
                 <h2 id="Intro">My Personality</h2>
@@ -129,10 +127,9 @@
 
 
     <script>
-        document.getElementById("LeftArrow").innerHTML="<"
-        document.getElementById("RightArrow").innerHTML=">"
         const DropDown=document.getElementsByClassName("DropDown")
         const ThreeLines=document.getElementById("ThreeLines")
+        document.getElementById("DropDownMenu").style.top=`${parseInt(ThreeLines.style.height)}px`
         const DropDownMenu=document.getElementById("DropDownMenu")
         ThreeLines.addEventListener("click",(e)=>{
                 for(i=1;i<=DropDown.length;i++){
