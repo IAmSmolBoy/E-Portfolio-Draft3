@@ -9,6 +9,10 @@
 </head>
 <body>
     <nav id="navbar">
+        <div id="OtherDropDownMenu">
+            <a href="Projects.html" class="OtherDropDown" id="Projects">Projects</a>
+            <a href="Leadership and CCA/Leadership.html" class="OtherDropDown" id="Leadership">Leadership and CCA</a>
+        </div>
         <div id="ThreeLines">
             <div class="threeLines" id="one"></div>
             <div class="threeLines" id="two"></div>
@@ -47,100 +51,32 @@
                 </div>
             </div>
         </section>
-        <section id="Academics" style="display:none;">
-            <header class="SectionHeaders">
-                <h2>Academics</h2>
-            </header>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">Edusave good progress award</h4>
-                    <img src="Academics/EDUSAVE GOOD PROGRESS AWARD 2019.jpg" alt="Cert" class="VerticalCerts">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">NP Discovering the Science of Flight AEM 2019</h4>
-                    <img src="Academics/NAP Discovering the Science of Flight.jpg" alt="Cert" class="AcademicCerts HorizontalCerts">
-                </li>
-            </div>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">UNSW ICAS Mathematics 2019</h4>
-                    <img src="Academics/UNSW-ICAS ASSESSMENTS MATHEMATICS 2019.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">UNSW ICAS Mathematics 2017</h4>
-                    <img src="Academics/UNSW-ICAS ASSESSMENTS MATHEMATICS 2017.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-            </div>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">Project TLM 2016</h4>
-                    <img src="Academics/Project TLM.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">Mathematics Olympiad 2016</h4>
-                    <img src="Academics/Singapore Mathematics Olympiad 2016.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-            </div>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">Mathematics Olympiad 2015</h4>
-                    <img src="Academics/National Mathematics Olympiad of Singapore 2015.jpg" alt="Cert" class="AcademicCerts HorizontalCerts">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">UNSW ICAS Science 2015</h4>
-                    <img src="Academics/UNSW-ICAS ASSESSMENTS Science 2015.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-            </div>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">UNSW ICAS Mathematics 2015</h4>
-                    <img src="Academics/UNSW-ICAS ASSESSMENTS MATHEMATICS 2015.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">Outstanding Performance in Mathematics 2014</h4>
-                    <img src="Academics/TNS Outstanding Performance in P4 Mathematics.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-            </div>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">UNSW ICAS Mathematics 2013</h4>
-                    <img src="Academics/UNSW-ICAS ASSESSMENTS MATHEMATICS 2013.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">UNSW ICAS Science 2013</h4>
-                    <img src="Academics/UNSW-ICAS ASSESSMENTS Science 2013.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-            </div>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">Outstanding Performance in Mathematics 2012</h4>
-                    <img src="Academics/TNS Outstanding Performance in P2 Mathematics.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">Outstanding Performance in Mathematics 2012</h4>
-                    <img src="Academics/TNS Outstanding Performance in P1 Mathematics.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
-                </li>
-            </div>
-        </section>
     </main>
 
 
 
     <script>
+        const Navbar=document.getElementById("navbar")
         const DropDown=document.getElementsByClassName("DropDown")
         const ThreeLines=document.getElementById("ThreeLines")
-        document.getElementById("DropDownMenu").style.top=`${parseInt(ThreeLines.style.height)}px`
         const DropDownMenu=document.getElementById("DropDownMenu")
+        const OtherDropDown=document.getElementsByClassName("OtherDropDown")
+        const OtherDropDownMenu=document.getElementById("OtherDropDownMenu")
         ThreeLines.addEventListener("click",(e)=>{
                 for(i=1;i<=DropDown.length;i++){
                     if(DropDown[i-1].style.display!="block"){
                         DropDown[i-1].style.display="block"
                         DropDownMenu.style.animation="DropDown 0.25s linear"
+                        OtherDropDown[i-1].style.display="block"
+                        OtherDropDownMenu.style.animation="MoveLeft 0.25s linear"
+                        DropDownMenu.style.top=`${parseInt(navbar.clientHeight)}px`
                     }
                     else{
                         for(i=1;i<=DropDown.length;i++){
                             DropDown[i-1].style.display="none"
-                        DropDownMenu.style.animation=""
+                            DropDownMenu.style.animation=""
+                            OtherDropDown[i-1].style.display="none"
+                            OtherDropDownMenu.style.animation=""
                         }
                     }
                 }

@@ -6,10 +6,6 @@
     from{transform: translateX(1000px);}
     to{transform: translateX(0px);}
 }
-@keyframes Expand{
-    from{transform:scale(0.01)}
-    to{transform:scale(1)}
-}
 
 
 
@@ -48,31 +44,20 @@ body{
     animation:Expand 0.5s linear;
     color:white;
 }
-h2{
-    margin: 0;
-}
 li{
-    padding:0;
-    margin:0;
     list-style: none;
 }
-ol{
-    padding: 0;
-    margin:0;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color:white;
-}
-a:hover{
-    text-decoration: underline;
-}
-section{
+main{
     position: relative;
-    top:7vh;
-    margin-bottom:0;
-    max-width:78vw  ;
+    top:5vh;
+    background-color: linear-gradient(to right, #009FFD,#2A2A72);
+    width:min-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: auto;
+}
+img{
+    margin-left: 1vw;
 }
 
 
@@ -151,8 +136,7 @@ div#DropDownMenu{
     text-decoration: none;
     transition: 0.5s;
     float: left;
-    width:max-content;
-    padding:1vh 1vw;
+    padding:1.5vh 1vw;
     background-color: #2A2A72;
     color:#1565B8;
 }
@@ -167,30 +151,17 @@ div#OtherDropDownMenu{
 
 
 
-h2#Name{
-    left: 25%;
-    width: 50%;
-    top:7vh;
-    position: relative;
+
+
+.HorizontalCerts{
+    padding:0;
+    max-width:40vw;
 }
-#content{
-    top:5vh;
-    position: relative; 
-    max-width: 78vw;
-    margin:auto;
+.VerticalCerts{
+    padding:0;
+    height: 70vh;
 }
-#Intro{
-    margin: 0;
-}
-.personalityDiv{
-    display:inline-block;
-    top:0;
-    position: relative;
-    vertical-align: top;
-}
-#PersonalityDiv{
-    height:min-content;
-}
-.Projects{
-    display:block;
+.Flex{
+    display:flex;
+    justify-content: center;
 }

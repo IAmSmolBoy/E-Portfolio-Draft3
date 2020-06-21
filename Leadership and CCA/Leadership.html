@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Projects.css">
-    <title>Projects</title>
+    <link rel="stylesheet" href="Leadership.css">
+    <title>Leadership and CCA</title>
 </head>
 <body>
     <nav id="navbar">
         <div id="OtherDropDownMenu">
-            <a href="main.html" class="OtherDropDown" id="back">Back</a>
-            <a href="Leadership and CCA/Leadership.html" class="OtherDropDown" id="Leadership">Leadership and CCA</a>
+            <a href="../Projects.html" class="OtherDropDown" id="Projects">Projects</a>
+            <a href="../main.html" class="OtherDropDown" id="Back">Back</a>
         </div>
         <div id="ThreeLines">
             <div class="threeLines" id="one"></div>
@@ -19,20 +19,33 @@
         </div>
         <div id="DropDownMenu">
             <a class="DropDown" href="#">To the top</a>
-            <a class="DropDown" id="last" href="Academics/Academics.html">Academic achievements</a>
+            <a class="DropDown" id="last" href="../Academics/Academics.html">Academic achievements</a>
         </div>
     </nav>
     <main>
         <header class="SectionHeaders">
-            <h2>Projects</h2>
+            <h2>Leadership and CCA Achievements</h2>
         </header>
-        <li class="projectlists"><a target=_blank href="http://fly-the-box.netlify.app/" class="Project">Fly the box web game</a></li>
-        <li class="projectlists"><a target=_blank href="" class="Project"></a></li>
-        <li class="projectlists">
-            <h3>Code Xtreme Apps 2019</h3>
-            <a target=_blank href="https://xyz-hackathon.herokuapp.com/index.html" class="Projects">My competition web app</a>
-            <img class="HorizontalCerts Projects" src="Certificate/CODE XTREME APPS 2019.jpg" alt="Hackathon Certificate">
-        </li>
+        <div class="Flex">
+            <li class="AcademicLists">
+                <h4 class="AchievementSummary">BVSS Model Student Award 2019</h4>
+                <img src="BVSS Model Student Award 2019.jpg" alt="Cert" class="HorizontalCerts">
+            </li>
+            <li class="AcademicLists">
+                <h4 class="AchievementSummary">First Aid Competition</h4>
+                <img src="FA Comp.jpg" alt="Cert" class="AcademicCerts VerticalCerts">
+            </li>
+        </div>
+        <div class="Flex">
+            <li class="AcademicLists">
+                <h4 class="AchievementSummary">BVSS Student Leadship Camp 2019</h4>
+                <img src="BVSS Student Leadship Camp.jpg" alt="Cert" class="AcademicCerts HorizontalCerts">
+            </li>
+            <li class="AcademicLists">
+                <h4 class="AchievementSummary">BVSS Outstanding CCA Member Award 2018</h4>
+                <img src="BVSS Outstanding CCA Member Award 2018.jpg" alt="Cert" class="VerticalCerts">
+            </li>
+        </div>
     </main>
     <script>
         const Navbar=document.getElementById("navbar")
@@ -48,7 +61,7 @@
                         DropDownMenu.style.animation="DropDown 0.25s linear"
                         OtherDropDown[i-1].style.display="block"
                         OtherDropDownMenu.style.animation="MoveLeft 0.25s linear"
-                        DropDownMenu.style.top=`${parseInt(navbar.clientHeight)}px`
+                        DropDownMenu.style.top=`${parseInt(Navbar.clientHeight)}px`
                     }
                     else{
                         for(i=1;i<=DropDown.length;i++){

@@ -1,0 +1,180 @@
+@keyframes DropDown{
+    0%{transform: translateY(-100px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes MoveLeft{
+    from{transform: translateX(1000px);}
+    to{transform: translateX(0px);}
+}
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width:20px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color:darkgray;
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 20px;
+    background-color:gray;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(to right, #009FFD,#2A2A72);
+    object-fit: cover;
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    animation:Expand 0.5s linear;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration: underline;
+}
+h2{
+    width:100vw;
+}
+li{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+ol{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+main{
+    position: relative;
+    top:7vh;
+    margin-bottom:0;
+    max-width:78vw  ;
+}
+
+
+
+
+
+
+#navbar{
+    width: 100vw;
+    left: 0;
+    top:0;
+    position: fixed;
+    height: min-content;
+    z-index: 10000000;
+    margin: 0;
+    background:linear-gradient(to right, #009FFD,#2A2A72);
+    border-bottom: #27284D solid 2px;
+}
+a.NavbarContent{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: unset;
+    transition: 1s;
+}
+div#ThreeLines{
+    float: right;
+    margin-right: 20px;
+    width:30px;
+}
+#one{
+    width: 30px;
+}
+#two{
+    width: 20px;
+}
+#three{
+    width: 25px;
+}
+div.threeLines{
+    position: relative;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:#1565B8;
+    border-radius: 20px;
+    transition: 1s;
+    height: 5px;
+}
+#ThreeLines:hover div{
+    width:30px;
+}
+#ThreeLines:hover{
+    cursor:pointer;
+}
+.DropDown{
+    display: none;
+    text-decoration: none;
+    transition: 0.5s;
+    padding:1vh 1vw;
+    color:#009FFD;
+}
+.DropDown:hover{
+    background-color:#009FFD;
+    color:#1565B8;
+}
+div#DropDownMenu{
+    animation-fill-mode: forwards;
+    position: fixed;
+    right:0;
+    width: min-content;
+    background-color: #1565B8;
+}
+.OtherDropDown{
+    display: none;
+    text-decoration: none;
+    transition: 0.5s;
+    float: left;
+    width:max-content;
+    padding:1.5vh 1vw;
+    background-color: #2A2A72;
+    color:#1565B8;
+}
+.OtherDropDown:hover{
+    background-color:#1565B8;
+    color:#2A2A72;
+}
+div#OtherDropDownMenu{
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+.HorizontalCerts{
+    padding:0;
+    max-width:40vw;
+}
+.projectlists{
+    width:100vw;
+}
+.Projects{
+    display:block;
+    margin:auto;
+}

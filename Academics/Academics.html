@@ -8,6 +8,10 @@
 </head>
 <body>
     <nav id="navbar">
+        <div id="OtherDropDownMenu">
+            <a href="Projects.html" class="OtherDropDown" id="Projects">Projects</a>
+            <a href="Leadership and CCA/Leadership.html" class="OtherDropDown" id="Leadership">Leadership and CCA</a>
+        </div>
         <div id="ThreeLines">
             <div class="threeLines" id="one"></div>
             <div class="threeLines" id="two"></div>
@@ -15,7 +19,7 @@
         </div>
         <div id="DropDownMenu">
             <a class="DropDown" href="#">To the top</a>
-            <a class="DropDown" id="last" href="Academics/Academics.html">Academic achievements</a>
+            <a class="DropDown" id="last" href="../main.html">Back</a>
         </div>
     </nav>
     <main id="Academics">
@@ -94,19 +98,27 @@
         </div>
     </main>
     <script>
+        const Navbar=document.getElementById("navbar")
         const DropDown=document.getElementsByClassName("DropDown")
         const ThreeLines=document.getElementById("ThreeLines")
         const DropDownMenu=document.getElementById("DropDownMenu")
+        const OtherDropDown=document.getElementsByClassName("OtherDropDown")
+        const OtherDropDownMenu=document.getElementById("OtherDropDownMenu")
         ThreeLines.addEventListener("click",(e)=>{
                 for(i=1;i<=DropDown.length;i++){
                     if(DropDown[i-1].style.display!="block"){
                         DropDown[i-1].style.display="block"
                         DropDownMenu.style.animation="DropDown 0.25s linear"
+                        OtherDropDown[i-1].style.display="block"
+                        OtherDropDownMenu.style.animation="MoveLeft 0.25s linear"
+                        DropDownMenu.style.top=`${parseInt(navbar.clientHeight)}px`
                     }
                     else{
                         for(i=1;i<=DropDown.length;i++){
                             DropDown[i-1].style.display="none"
-                        DropDownMenu.style.animation=""
+                            DropDownMenu.style.animation=""
+                            OtherDropDown[i-1].style.display="none"
+                            OtherDropDownMenu.style.animation=""
                         }
                     }
                 }
