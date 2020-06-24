@@ -221,8 +221,15 @@ h2#Name{
     width:50px;
     transition: 0.5s;
 }
-#discordlogo{
-    margin-right:10px;
+#GmailContainer{
+    display:flex;
+}
+#CopyTextButton{
+    border:1px solid black;
+    border-radius: 20px;
+    background-color:#1565B8;
+    color: white;
+    width:min-content;
 }
 img.Socials:hover{
     transform:scale(1.5)

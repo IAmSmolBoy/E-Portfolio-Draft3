@@ -56,8 +56,12 @@
         <h2 id="Socials">Socials</h2>
         <br id="Socialbr">
         <div class="SocialDivs" id="Gmail">
-            <img src="Gmail logo.png" alt="Gmail" class="Socials" id="Gmaillogo">
-            <h3 onclick="CopyText()" id="Email">gohhongrui@gmail.com</h3>
+            <div id="GmailContainer">
+                <img src="Gmail logo.png" alt="Gmail" class="Gmail Socials" id="Gmaillogo">
+                <button onclick="CopyText()" class="Gmail" id="CopyTextButton">Copy Text</button>
+            </div>
+            <h3>gohhongrui@gmail.com</h3>
+            <textarea style="display:none;" name="" id="Email" cols="30" rows="10">gohhongrui@gmail.com</textarea>
         </div>
         <div class="SocialDivs" id="Github">
             <a href="https://github.com/IAmSmolBoy" target=_blank id="GithubLink"><img src="Github logo.png" alt="Github" class="Socials" id="Githublogo"></a>
