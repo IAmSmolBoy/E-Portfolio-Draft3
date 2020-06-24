@@ -34,9 +34,10 @@ const GithubLogo = document.getElementById("Githublogo")
 
 // Copy text code
 function CopyText(){
-    console.log("Hello")
-    var copyText = document.getElementById("Email");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
+    const el = document.createElement('textarea');
+    el.value = "gohhongrui@gmail.com";
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
 }

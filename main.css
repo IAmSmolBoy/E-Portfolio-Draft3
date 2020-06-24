@@ -226,10 +226,14 @@ h2#Name{
 }
 #CopyTextButton{
     border:1px solid black;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color:#1565B8;
     color: white;
-    width:min-content;
+    height: min-content;
+    margin-left:20px;
+}
+#CopyTextButton:active{
+    transform: scale(1.5);
 }
 img.Socials:hover{
     transform:scale(1.5)
