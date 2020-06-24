@@ -47,6 +47,7 @@ body{
     font-family: 'MuseoModerno', cursive;
     animation:Expand 0.5s linear;
     color:white;
+    position:relative;
 }
 h2{
     margin: 0;
@@ -153,12 +154,12 @@ div#DropDownMenu{
     float: left;
     width:max-content;
     padding:1vh 1vw;
-    background-color: #2A2A72;
-    color:#1565B8;
+    background-color:#007bff;   
+    color:#0e2b4b;
 }
 .OtherDropDown:hover{
-    background-color:#1565B8;
-    color:#2A2A72;
+    background-color:#0e2b4b;   
+    color:#007bff;
 }
 div#OtherDropDownMenu{
     animation-fill-mode: forwards;
@@ -224,6 +225,12 @@ h2#Name{
 #GmailContainer{
     display:flex;
 }
+.Gmail{
+    vertical-align: bottom;
+}
+#Gmaillogo:hover{
+    cursor:pointer;
+}
 #CopyTextButton{
     border:1px solid black;
     border-radius: 5px;
@@ -231,6 +238,11 @@ h2#Name{
     color: white;
     height: min-content;
     margin-left:20px;
+    transition: 0.5s;
+}
+#CopyTextButton:hover{
+    background-color:#072b52;
+    cursor:pointer;
 }
 #CopyTextButton:active{
     transform: scale(1.5);
