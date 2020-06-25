@@ -1,6 +1,6 @@
 @keyframes Contract{
-    from{transform: scale(1)}
-    to{transform:scale(0.001)}
+    from{transform: scale(1);}
+    to{transform:scale(0.001);}
 }
 @keyframes Rainbow{
     0%{color:white;}
@@ -16,8 +16,9 @@
 
 
 @media only screen and (max-width:500px){
-    div#anchorcontainer{
+    a#Quote{
         width:75vw;
+        left:12.5vw;
     }
 }
 body{
@@ -30,18 +31,16 @@ body{
     overflow:hidden;
     color:white;
 }
-#anchorcontainer{
-    width:47vw;
-    margin:auto;
-}
-a#Quote{
+#Quote{
     text-decoration: none;
-    position:relative;
+    position:absolute;
     top:45vh;
+    width:47vw;
+    left:26.5vw;
     transition: 1s;
     color:white;
 }
-a#Quote:hover{
+#Quote:hover{
     cursor: pointer;
     text-decoration: underline;
     animation:Rainbow 1s linear infinite;
