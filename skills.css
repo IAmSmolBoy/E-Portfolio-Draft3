@@ -1,0 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(to right, #009FFD,#2A2A72);
+    object-fit: cover;
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    animation:Expand 0.5s linear;
+    color:white;
+    position:relative;
+}
