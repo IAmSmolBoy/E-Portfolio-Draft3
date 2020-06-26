@@ -7,7 +7,7 @@
     to{transform: translateX(0px);}
 }
 @keyframes Expand{
-    from{transform:scale(0.01)}
+    from{transform:scale(0.001)}
     to{transform:scale(1)}
 }
 
@@ -154,8 +154,8 @@ div#DropDownMenu{
     float: left;
     width:max-content;
     padding:1vh 1vw;
-    background-color:#007bff;   
-    color:#0e2b4b;
+    background-color:#1c5a9c;   
+    color:#009FFD;
 }
 .OtherDropDown:hover{
     background-color:#0e2b4b;   
