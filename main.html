@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
     <title>About Me</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
             <div class="threeLines" id="three"></div>
         </div>
         <div id="DropDownMenu">
-            <a class="DropDown" href="#">To the top</a>
+            <a href="The Arts/arts.html" class="DropDown">The Arts</a>
             <a class="DropDown" id="last" href="Academics/Academics.html">Academic achievements</a>
         </div>
     </nav>
@@ -71,8 +72,19 @@
 
 
 
-    <script src="main.js"></script>
-
+    <script>
+        // Socials logo onlick, socials info pop up
+        const DiscordLogo = document.getElementById("discordlogo")
+        const GithubLogo = document.getElementById("Githublogo")
+        
+        
+        
+        // Copy text code
+        function CopyText(){
+            navigator.clipboard.writeText("gohhongrui@gmail.com")
+        }
+    </script>
+    <script src="navbar.js"></script>
 
 </body>
 </html>

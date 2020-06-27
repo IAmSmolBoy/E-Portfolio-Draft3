@@ -5,23 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills and Technologies</title>
     <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <!-- <div class="meterDiv"> -->
-        <label for="pythonMeter" class="pythonLabel python">Python:</label>
+    <nav id="navbar">
+        <div id="OtherDropDownMenu">
+            <a href="Projects.html" class="OtherDropDown" id="Projects">Projects</a>
+            <a href="Leadership and CCA/Leadership.html" class="OtherDropDown" id="Leadership">Leadership and CCA</a>
+            <a href="main.html" class="OtherDropDown">Main Menu</a>
+        </div>
+        <div id="ThreeLines" onclick="Dropdown()">
+            <div class="threeLines" id="one"></div>
+            <div class="threeLines" id="two"></div>
+            <div class="threeLines" id="three"></div>
+        </div>
+        <div id="DropDownMenu">
+            <a href="The Arts/arts.html" class="DropDown">The Arts</a>
+            <a class="DropDown" id="last" href="Academics/Academics.html">Academic achievements</a>
+        </div>
+    </nav>
+    <div class="meterDiv">
+        <label for="pythonMeter" class="Label python">Python:</label>
         <meter max=100 min=0 value=30 id="pythonMeter" class="meter a python"></meter>
-    <!-- </div> -->
-    <!-- <div class="meterDiv"> -->
-        <label for="CSSMeter" class="CSSLabel CSS">CSS:</label>
+    </div>
+    <div class="meterDiv">
+        <label for="CSSMeter" class="Label CSS">CSS:</label>
         <meter max=100 min=0 value=30 id="CSSMeter" class="meter a CSS"></meter>
-    <!-- </div> -->
-    <!-- <div class="meterDiv"> -->
-        <label for="HTMLMeter" class="HTMLLabel HTML">HTML:</label>
+    </div>
+    <div class="meterDiv">
+        <label for="HTMLMeter" class="Label HTML">HTML:</label>
         <meter max=100 min=0 value=70 id="HTMLmeter" class="meter b HTML"></meter>
-    <!-- </div> -->
-    <!-- <div class="meterDiv"> -->
-        <label for="JsMeter" class="JSLabel Js">Js:</label>
+    </div>
+    <div class="meterDiv">
+        <label for="JsMeter" class="Label Js">Js:</label>
         <meter max=100 min=0 value=70 id="JsMeter" class="meter b Js"></meter>
-    <!-- </div> -->
+    </div>
+    <script src="navbar.js"></script>
 </body>
 </html>

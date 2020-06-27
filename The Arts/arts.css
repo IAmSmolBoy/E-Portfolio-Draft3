@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -10,21 +21,6 @@ body{
     color:white;
     position:relative;
 }
-meter{
-    width:20vw;
-    height:4vw;
-    display:block;
-    margin:1vh auto;
-    position: relative;
-}
-label{
-    font-size:20px;
-    display:block;
-    position: relative;
-}
-
-
-
 
 
 
@@ -49,29 +45,4 @@ div#DropDownMenu{
     right:0;
     width: min-content;
     background-color: #1565B8;
-}
-
-
-
-
-
-
-
-
-
-
-.meterDiv{
-    margin:2vh auto;
-    height:min-content;
-}
-.Label{
-    float:left;
-}
-.a::before{
-    content:"30%";
-    float:right;
-}
-.b::before{
-    content:"70%";
-    float:right;
 }

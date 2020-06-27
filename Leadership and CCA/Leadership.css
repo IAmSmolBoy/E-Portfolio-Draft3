@@ -1,4 +1,4 @@
-@keyframes DropDown{
+    @keyframes DropDown{
     0%{transform: translateY(-100px);}
     100%{transform: translateY(0px);}
 }
@@ -65,54 +65,6 @@ img{
 
 
 
-#navbar{
-    width: 100vw;
-    left: 0;
-    top:0;
-    position: fixed;
-    height: min-content;
-    z-index: 10000000;
-    margin: 0;
-    background:linear-gradient(to right, #009FFD,#2A2A72);
-    border-bottom: #27284D solid 2px;
-}
-a.NavbarContent{
-    font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    text-align: unset;
-    transition: 1s;
-}
-div#ThreeLines{
-    float: right;
-    margin-right: 20px;
-}
-#one{
-    width: 30px;
-}
-#two{
-    width: 20px;
-}
-#three{
-    width: 25px;
-}
-div.threeLines{
-    position: relative;
-    margin-left: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color:#1565B8;
-    border-radius: 20px;
-    transition: 1s;
-    height: 5px;
-}
-#ThreeLines:hover div{
-    width:30px;
-}
-#ThreeLines:hover{
-    cursor:pointer;
-}
 .DropDown{
     display: none;
     text-decoration: none;
@@ -130,22 +82,6 @@ div#DropDownMenu{
     right:0;
     width: min-content;
     background-color: #1565B8;
-}
-.OtherDropDown{
-    display: none;
-    text-decoration: none;
-    transition: 0.5s;
-    float: left;
-    padding:1.5vh 1vw;
-    background-color: #2A2A72;
-    color:#1565B8;
-}
-.OtherDropDown:hover{
-    background-color:#1565B8;
-    color:#2A2A72;
-}
-div#OtherDropDownMenu{
-    animation-fill-mode: forwards;
 }
 
 
