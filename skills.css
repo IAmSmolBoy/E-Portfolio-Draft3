@@ -16,10 +16,20 @@ meter{
     height:4vw;
     margin:auto;
 }
-.python,.HTML,.Js,.CSS{
-    vertical-align: middle;
-    display:inline-block;
+label{
+    position: relative;
+    left:25vw;
+}
+
+
+
+
+.meterDiv{
+    display:block;
+    margin:5vh auto;
 }
 .meter{
     display:block;
+    position:relative;
+    top:20vh;
 }
