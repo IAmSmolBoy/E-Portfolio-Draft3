@@ -1,3 +1,16 @@
+@media only screen and (max-width:500px){
+    div.Meters{
+        width:100/3vw;
+    }
+}
+
+
+
+
+
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -12,7 +25,7 @@ body{
 }
 meter{
     width:20vw;
-    height:4vw;
+    height:9vh;
     display:block;
     position: relative;
 }
@@ -20,9 +33,7 @@ label{
     font-size:20px;
     display:block;
     position: relative;
-}
-div{
-    display:inline;
+    margin:4.25vh auto;
 }
 
 
@@ -62,11 +73,10 @@ div#DropDownMenu{
 
 
 
-
-.python,.HTML,.CSS,.Js{
-    display:inline;
+.Meters{
+    display:inline-block;
     vertical-align: middle;
-    top:10vh;
+    text-align: right;
     position: relative;
-    margin:0 auto;
+    top:10vh;
 }
