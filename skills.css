@@ -29,11 +29,17 @@ meter{
     display:block;
     position: relative;
 }
+meter::-webkit-meter-optimum-value{
+    background-color:#0B82DB    
+}
+meter::-webkit-meter-bar{
+    background-color:#2A2A72;
+}
 label{
     font-size:20px;
     display:block;
     position: relative;
-    margin:4.25vh auto;
+    margin:5vh auto;
 }
 
 
@@ -78,5 +84,6 @@ div#DropDownMenu{
     vertical-align: middle;
     text-align: right;
     position: relative;
+    font-family:sans-serif;
     top:10vh;
 }
