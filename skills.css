@@ -14,13 +14,15 @@ meter{
     width:20vw;
     height:4vw;
     display:block;
-    margin:1vh auto;
     position: relative;
 }
 label{
     font-size:20px;
     display:block;
     position: relative;
+}
+div{
+    display:inline;
 }
 
 
@@ -60,18 +62,11 @@ div#DropDownMenu{
 
 
 
-.meterDiv{
-    margin:2vh auto;
-    height:min-content;
-}
-.Label{
-    float:left;
-}
-.a::before{
-    content:"30%";
-    float:right;
-}
-.b::before{
-    content:"70%";
-    float:right;
+
+.python,.HTML,.CSS,.Js{
+    display:inline;
+    vertical-align: middle;
+    top:10vh;
+    position: relative;
+    margin:0 auto;
 }
