@@ -29,8 +29,9 @@ function Dropdown(){
         Dropped=true
     }
     else{
-        DropDownMenu.style.animation=""
-        OtherDropDownMenu.style.animation=""
+        DropDownMenu.style.animation="RiseUp 0.25s linear"
+        DropDownMenu.style.top="0"
+        OtherDropDownMenu.style.animation="MoveRight 0.25s linear"
         Dropped=false
     }
 }

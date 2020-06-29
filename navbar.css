@@ -6,6 +6,14 @@
     from{transform: translateX(1000px);}
     to{transform: translateX(0px);}
 }
+@keyframes RiseUp{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-100px);}
+}
+@keyframes MoveRight{
+    from{transform: translateX(0px);}
+    to{transform: translateX(-1000px);}
+}
 
 
 
