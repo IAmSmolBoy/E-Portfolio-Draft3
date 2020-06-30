@@ -6,32 +6,48 @@ const OtherDropDown=document.getElementsByClassName("OtherDropDown")
 const OtherDropDownMenu=document.getElementById("OtherDropDownMenu")
 var Dropped=false
 function Dropdown(){
-    for(i=0;i<DropDown.length;i++){
-        if(DropDown[i].style.display!="block"){
-            DropDown[i].style.display="block"
+        if(DropDown[0].style.display!="block"){
+            for(i=0;i<DropDown.length;i++){
+                DropDown[i].style.display="block"
+            }
         }
         else{
-            DropDown[i].style.display="none"
+            setTimeout(() => {
+                for(i=0;i<DropDown.length;i++){
+                    DropDown[i].style.display="none"
+                }
+            }, 250);
         }
-    }
     for(j=0;j<OtherDropDown.length;j++){
         if(OtherDropDown[j].style.display!="block"){
             OtherDropDown[j].style.display="block"
         }
         else{
-            OtherDropDown[j].style.display="none"
+            setTimeout(() => {
+                for(j=0;j<OtherDropDown.length;j++){
+                    OtherDropDown[j].style.display="none"
+                }
+            }, 250);
         }
     }
     if(Dropped===false){
-        DropDownMenu.style.animation="DropDown 0.25s linear"
+        DropDownMenu.classList.add("Dropping")
+        OtherDropDownMenu.classList.add("MovingLeft")
         DropDownMenu.style.top=`${parseInt(navbar.clientHeight)}px`
-        OtherDropDownMenu.style.animation="MoveLeft 0.25s linear"
         Dropped=true
+        setTimeout(() => {
+            DropDownMenu.classList.remove("Dropping")
+            OtherDropDownMenu.classList.remove("MovingLeft")
+        }, 250);
     }
     else{
-        DropDownMenu.style.animation="RiseUp 0.25s linear"
+        DropDownMenu.classList.add("Rising")
+        OtherDropDownMenu.classList.add("MovingRight")
         DropDownMenu.style.top="0"
-        OtherDropDownMenu.style.animation="MoveRight 0.25s linear"
         Dropped=false
+        setTimeout(() => {
+            DropDownMenu.classList.remove("Rising")
+            OtherDropDownMenu.classList.remove("MovingRight")
+        }, 250);
     }
 }
