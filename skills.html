@@ -6,6 +6,7 @@
     <title>Skills and Technologies</title>
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -24,24 +25,28 @@
             <a class="DropDown" id="last" href="Academics/Academics.html">Academic achievements</a>
         </div>
     </nav>
-    <div class="LabelDiv Meters">
-        <label for="pythonMeter" class="python">Python:</label>
-        <label for="CSSMeter" class="CSS">CSS:</label>
-        <label for="JsMeter" class="Js">Js:</label>
-        <label for="HTMLMeter" class="HTML">HTML:</label>
-    </div>
-    <div class="meterDiv Meters">
-        <meter max=100 min=0 value=30 id="pythonMeter" class="python"></meter>
-        <meter max=100 min=0 value=30 id="CSSMeter" class="CSS"></meter>
-        <meter max=100 min=0 value=60 id="JsMeter" class="Js"></meter>
-        <meter max=100 min=0 value=70 id="HTMLmeter" class="HTML"></meter>
-    </div>
-    <div class="percentDiv Meters">
-        <label for="pythonMeter">30%</label>
-        <label for="CSSMeter">30%</label>
-        <label for="JsMeter">60%</label>
-        <label for="HTMLMeter">70%</label>
-    </div>
+    <main class="MeterDiv">
+        <section class="Meters" id="Python">
+            <label for="pythonMeter" class="python">Python:</label>
+            <meter max=100 min=0 value=30 id="pythonMeter" class="python"></meter>
+            <label for="pythonMeter">30%</label>
+        </section>
+        <section class="Meters" id="CSS">
+            <label for="CSSMeter" class="CSS">CSS:</label>
+            <meter max=100 min=0 value=30 id="CSSMeter" class="CSS"></meter>
+            <label for="CSSMeter">30%</label>
+        </section>
+        <section class="Meters" id="JS">
+            <label for="JsMeter" class="Js">Js:</label>
+            <meter max=100 min=0 value=60 id="JsMeter" class="Js"></meter>
+            <label for="JsMeter">60%</label>
+        </section>
+        <section class="Meters" id="HTML">
+            <label for="HTMLMeter" class="HTML">HTML:</label>
+            <meter max=100 min=0 value=70 id="HTMLmeter" class="HTML"></meter>
+            <label for="HTMLMeter">70%</label>
+        </section>
+    </main>
     <script src="navbar.js"></script>
 </body>
 </html>

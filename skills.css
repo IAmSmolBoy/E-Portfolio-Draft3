@@ -18,10 +18,9 @@ body{
     background:linear-gradient(to right, #009FFD,#2A2A72);
     object-fit: cover;
     text-align: center;
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Oswald', sans-serif;
     animation:Expand 0.5s linear;
     color:white;
-    position:relative;
 }
 meter{
     width:20vw;
@@ -34,12 +33,6 @@ meter::-webkit-meter-optimum-value{
 }
 meter::-webkit-meter-bar{
     background-color:#2A2A72;
-}
-label{
-    font-size:20px;
-    display:block;
-    position: relative;
-    margin:5vh auto;
 }
 
 
@@ -79,11 +72,16 @@ div#DropDownMenu{
 
 
 
+.MeterDiv{
+    position: absolute;
+    width:min-content;
+    font-size:20px;
+    margin:auto;
+}
 .Meters{
-    display:inline-block;
-    vertical-align: middle;
-    text-align: right;
+    display:flex;
     position: relative;
-    font-family:sans-serif;
+    width:min-content;
     top:10vh;
+    font-size:20px;
 }
