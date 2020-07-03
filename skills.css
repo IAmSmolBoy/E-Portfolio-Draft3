@@ -22,15 +22,16 @@ body{
     animation:Expand 0.5s linear;
     color:white;
 }
-meter{
-    width:20vw;
-    height:9vh;
-    position: relative;
-}
 meter::-webkit-meter-optimum-value{
     background-color:#0B82DB    
 }
 meter::-webkit-meter-bar{
+    background-color:#2A2A72;
+}
+meter::-moz-meter-optimum-value{
+    background-color:#0B82DB    
+}
+meter::-moz-meter-bar{
     background-color:#2A2A72;
 }
 
@@ -75,8 +76,22 @@ div#DropDownMenu{
     position: relative;
     font-size:20px;
     top:10vh;
-    display:flex;
-    flex-wrap:wrap;
+    margin:auto;
+}
+.SkillsDiv{
+    display: inline-block;
+}
+.Lang, .Meter, .Percentage{
+    display:block;
+}
+meter{
+    width:20vw;
+    height:9vh;
+    position: relative;
+    top:25px;
+}
+label{
+    margin:25px;
 }
 .Meters{
     position: relative;

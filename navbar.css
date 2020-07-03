@@ -25,6 +25,7 @@
 a{
     text-decoration: none;
     color:white;
+    border: black solid 1px;
 }
 a:hover{
     text-decoration: underline;

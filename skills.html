@@ -26,18 +26,24 @@
         </div>
     </nav>
     <main class="MeterDiv">
-        <label for="pythonMeter" class="python Lang">Python:</label>
-        <meter max=100 min=0 value=30 id="pythonMeter" class="python"></meter>
-        <label for="pythonMeter Percentage">30%</label>
-        <label for="CSSMeter" class="CSS Lang">CSS:</label>
-        <meter max=100 min=0 value=30 id="CSSMeter" class="CSS"></meter>
-        <label for="CSSMeter Percentage">30%</label>
-        <label for="JsMeter" class="Js Lang">Js:</label>
-        <meter max=100 min=0 value=60 id="JsMeter" class="Js"></meter>
-        <label for="JsMeter Percentage">60%</label>
-        <label for="HTMLMeter" class="HTML Lang">HTML:</label>
-        <meter max=100 min=0 value=70 id="HTMLmeter" class="HTML"></meter>
-        <label for="HTMLMeter Percentage">70%</label>
+        <div class="LangDivs SkillsDiv">
+            <label for="pythonMeter" class="python Lang">Python:</label>
+            <label for="CSSMeter" class="CSS Lang">CSS:</label>
+            <label for="JsMeter" class="Js Lang">Js:</label>
+            <label for="HTMLMeter" class="HTML Lang">HTML:</label>
+        </div>
+        <div class="MeterDivs SkillsDiv">
+            <meter max=100 min=0 value=30 id="pythonMeter" class="Meter python"></meter>
+            <meter max=100 min=0 value=30 id="CSSMeter" class="Meter CSS"></meter>
+            <meter max=100 min=0 value=60 id="JsMeter" class="Meter Js"></meter>
+            <meter max=100 min=0 value=70 id="HTMLmeter" class="Meter HTML"></meter>
+        </div>
+        <div class="PercentDivs SkillsDiv">
+            <label for="pythonMeter" class="Percentage">30%</label>
+            <label for="CSSMeter" class="Percentage">30%</label>
+            <label for="JsMeter" class="Percentage">60%</label>
+            <label for="HTMLMeter" class="Percentage">70%</label>
+        </div>
     </main>
     <script src="navbar.js"></script>
 </body>
