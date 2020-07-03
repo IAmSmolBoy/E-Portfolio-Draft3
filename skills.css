@@ -22,16 +22,16 @@ body{
     animation:Expand 0.5s linear;
     color:white;
 }
-meter::-webkit-meter-optimum-value{
+::-webkit-meter-optimum-value{
     background-color:#0B82DB    
 }
-meter::-webkit-meter-bar{
+::-webkit-meter-bar{
     background-color:#2A2A72;
 }
-meter::-moz-meter-optimum-value{
+:-moz-meter-optimum-value{
     background-color:#0B82DB    
 }
-meter::-moz-meter-bar{
+:-moz-meter-bar{
     background-color:#2A2A72;
 }
 
