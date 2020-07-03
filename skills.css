@@ -27,6 +27,7 @@ meter{
     height:9vh;
     display:block;
     position: relative;
+    grid-area: 1 / 2 / 4 / 3;
 }
 meter::-webkit-meter-optimum-value{
     background-color:#0B82DB    
@@ -73,15 +74,20 @@ div#DropDownMenu{
 
 
 .MeterDiv{
-    position: absolute;
-    width:min-content;
+    position: relative;
     font-size:20px;
-    margin:auto;
+    display:grid;
+    grid-template:repeat(4,100px)/repeat(3,200px) ;
 }
 .Meters{
-    display:flex;
     position: relative;
     width:min-content;
+    margin:auto;
     top:10vh;
     font-size:20px;
+}
+.Percentage{
+    grid-area: 2 / 1 / 3 / 4;
+}
+.Lang{
 }
