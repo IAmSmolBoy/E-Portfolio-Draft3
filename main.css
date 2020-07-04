@@ -138,6 +138,9 @@ div#DropDownMenu{
     transition: 0.5s;
     display:flex;
 }
+.SocialDivs a{
+    border:none;
+}
 .Socials{
     position: relative;
     width:50px;
