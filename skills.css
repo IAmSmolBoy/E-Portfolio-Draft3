@@ -22,7 +22,7 @@ body{
     animation:Expand 0.5s linear;
     color:white;
 }
-::-webkit-meter-optimum-value{
+/* ::-webkit-meter-optimum-value{
     background-color:#0B82DB    
 }
 ::-webkit-meter-bar{
@@ -33,7 +33,7 @@ body{
 }
 :-moz-meter-bar{
     background-color:#2A2A72;
-}
+} */
 
 
 
@@ -75,20 +75,35 @@ div#DropDownMenu{
 .MeterDiv{
     position: relative;
     font-size:20px;
-    top:10vh;
     margin:auto;
+    top:10vh;
 }
 .SkillsDiv{
     display: inline-block;
+    vertical-align: top;
 }
-.Lang, .Meter, .Percentage{
-    display:block;
+.Meter{
+    display: block;
+    position: relative;
 }
-meter{
+.Lang, .Percentage{
+    display: block;
+    position: relative;
+    top: 10px;
+}
+progress[value] {
+    -webkit-appearance: progress-bar;
     width:20vw;
     height:9vh;
     position: relative;
     top:25px;
+}
+progress::-webkit-progress-bar{
+    background-color: #2A2A72;
+    border-radius: 2px;
+}
+progress[value]::-webkit-progress-value {
+    background-color: #2A2A72;
 }
 label{
     margin:25px;
