@@ -1,6 +1,38 @@
-@media only screen and (max-width:500px){
-    div.Meters{
-        width:100/3vw;
+@media only screen and (orientation:portrait) and (max-width:400px) and (min-width:300px){
+    .Meter{
+        width: 200px !important;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:500px) and (min-width:400px){
+    .Meter{
+        width: 250px !important;
+    }
+}
+@media only screen and (orientation:portrait) and (max-height:700px) and (min-height:600px){
+    .Meter{
+        margin-top: 1.5vh !important;
+        margin-bottom: 4vh !important;
+    }
+    label{
+        margin-bottom: 4vh !important;
+    }
+}
+@media only screen and (orientation:portrait) and (max-height:800px) and (min-height:700px){
+    .Meter{
+        margin-top: 0.5vh !important;
+        margin-bottom: 4.5vh !important;
+    }
+    label{
+        margin-bottom: 5vh !important;
+    }
+}
+@media only screen and (orientation:portrait) and (min-height:800px){
+    .Meter{
+        margin-top: 1vh !important;
+        margin-bottom: 4.5vh !important;
+    }
+    label{
+        margin-bottom: 5.5vh !important;
     }
 }
 
@@ -22,18 +54,6 @@ body{
     animation:Expand 0.5s linear;
     color:white;
 }
-/* ::-webkit-meter-optimum-value{
-    background-color:#0B82DB    
-}
-::-webkit-meter-bar{
-    background-color:#2A2A72;
-}
-:-moz-meter-optimum-value{
-    background-color:#0B82DB    
-}
-:-moz-meter-bar{
-    background-color:#2A2A72;
-} */
 
 
 
@@ -75,7 +95,6 @@ div#DropDownMenu{
 .MeterDiv{
     position: relative;
     font-size:20px;
-    margin:auto;
     top:10vh;
 }
 .SkillsDiv{
@@ -89,29 +108,34 @@ div#DropDownMenu{
 .Lang, .Percentage{
     display: block;
     position: relative;
-    top: 10px;
+    top: 1vh;
 }
 progress[value] {
-    -webkit-appearance: progress-bar;
+    -webkit-appearance: none;
     width:20vw;
-    height:9vh;
+    height:4.5vh;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
     position: relative;
-    top:25px;
+    top:2.5vh;
 }
-progress::-webkit-progress-bar{
+::-webkit-progress-bar{
     background-color: #2A2A72;
-    border-radius: 2px;
+    border-radius: 20px;
 }
-progress[value]::-webkit-progress-value {
-    background-color: #2A2A72;
+::-webkit-progress-value {
+    background-color: #009FFD;
+    border-radius: 20px;
+
 }
 label{
-    margin:25px;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 .Meters{
     position: relative;
     width:min-content;
     margin:auto;
-    top:10vh;
+    top: 10vh;
     font-size:20px;
 }
