@@ -2,6 +2,40 @@
     from{transform:scale(0.001)}
     to{transform:scale(1)}
 }
+@media only screen and (orientation:portrait){
+    #SocialSection{
+        position: relative !important;
+        top: 15vh !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #github{
+        margin: 0 !important;
+    }
+    .SocialDivs{
+        display: inline-block !important;
+        width: min-content !important;
+    }
+    #Gmail button{
+        margin: 0 !important;
+        padding: 5px !important;
+        margin-left: 5px !important;
+        position: relative !important;
+        top: 5px !important;
+    }
+    #Gmail{
+        display: flex !important;
+    }
+    #Gmail a{
+        margin-right: 10px !important;
+    }
+    .socialDivDivs{
+        display: flex !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: min-content!important;
+    }
+}
 
 
 

@@ -14,6 +14,19 @@
     from{transform: translateX(0px);}
     to{transform: translateX(1000px);}
 }
+@media only screen and (orientation:portrait) and (max-width:400px) and (min-width:300px){
+    nav{
+        font-size: 15px !important;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:500px) and (min-width:400px){
+}
+@media only screen and (orientation:portrait) and (max-height:700px) and (min-height:600px){
+}
+@media only screen and (orientation:portrait) and (max-height:800px) and (min-height:700px){
+}
+@media only screen and (orientation:portrait) and (min-height:800px){
+}
 
 
 
@@ -50,14 +63,6 @@ a:hover{
     margin: 0;
     background:linear-gradient(to right, #009FFD,#2A2A72);
     border-bottom: #27284D solid 2px;
-}
-a.NavbarContent{
-    font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    text-align: unset;
-    transition: 1s;
 }
 div#ThreeLines{
     float: right;
