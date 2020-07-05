@@ -53,7 +53,7 @@ body{
     background:linear-gradient(to right, #009FFD,#2A2A72);
     object-fit: cover;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Karla', sans-serif;
     animation:Expand 0.5s linear;
     color:white;
 }
@@ -103,25 +103,31 @@ div#DropDownMenu{
     font-size:20px;
     top:10vh;
 }
-.SkillsDiv{
-    display: inline-block;
-    vertical-align: top;
+.flex{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width:50vw;
 }
-.Meter{
-    display: block;
-    position: relative;
+.flex *{
+    vertical-align: middle;
 }
 .Lang, .Percentage{
-    display: block;
     position: relative;
     top: 1vh;
+}
+.Lang{
+    text-align: right;
+}
+.Percentage{
+    text-align: left;
 }
 progress[value] {
     -webkit-appearance: none;
     width:20vw;
     height:4.5vh;
     margin-top: 1vh;
-    margin-bottom: 3vh;
+    margin-bottom: 1.75vh;
     position: relative;
     top:2.5vh;
 }

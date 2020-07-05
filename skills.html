@@ -6,7 +6,7 @@
     <title>Skills and Technologies</title>
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="navbar.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -27,41 +27,47 @@
     </nav>
     <main>
         <section class="MeterDiv">
-            <div class="LangDivs SkillsDiv">
+            <header>
+                <h2>Language proficiencies</h2>
+            </header>
+            <div class="flex">
                 <label for="CSSMeter" class="CSS Lang">CSS:</label>
-                <label for="pythonMeter" class="python Lang">Python:</label>
-                <label for="JsMeter" class="Js Lang">Js:</label>
-                <label for="HTMLMeter" class="HTML Lang">HTML:</label>
+                <progress max=100 min=0 value=30 id="CSSMeter" class="Meter CSS">
+                    <div pseudo="-webkit-progress-inner-element">
+                        <div pseudo="-webkit-progress-value" style="width:80%"></div>
+                    </div>
+                </progress>
+                <label for="CSSMeter" class="Percentage">30%</label>
             </div>
-            <div class="MeterDivs SkillsDiv">
-                <progress max=100 min=0 value=30 id="pythonMeter" class="Meter python">
+            <div class="flex">
+                <label for="pythonMeter" class="python Lang">Python:</label>
+                <progress max=100 min=0 value=50 id="pythonMeter" class="Meter python">
                     <div pseudo="-webkit-progress-inner-element">
                         <div pseudo="-webkit-progress-value" style="width:80%"></div>
                     </div>
                 </progress>
-                <progress max=100 min=0 value=50 id="CSSMeter" class="Meter CSS">
-                    <div pseudo="-webkit-progress-inner-element">
-                        <div pseudo="-webkit-progress-value" style="width:80%"></div>
-                    </div>
-                </progress>
+                <label for="pythonMeter" class="Percentage">50%</label>
+            </div>
+            <div class="flex">
+                <label for="JsMeter" class="Js Lang">Js:</label>
                 <progress max=100 min=0 value=60 id="JsMeter" class="Meter Js">
                     <div pseudo="-webkit-progress-inner-element">
                         <div pseudo="-webkit-progress-value" style="width:80%"></div>
                     </div>
                 </progress>
+                <label for="JsMeter" class="Percentage">60%</label>
+            </div>
+            <div class="flex">
+                <label for="HTMLMeter" class="HTML Lang">HTML:</label>
                 <progress max=100 min=0 value=70 id="HTMLmeter" class="Meter HTML">
                     <div pseudo="-webkit-progress-inner-element">
                         <div pseudo="-webkit-progress-value" style="width:80%"></div>
                     </div>
                 </progress>
-            </div>
-            <div class="PercentDivs SkillsDiv">
-                <label for="pythonMeter" class="Percentage">30%</label>
-                <label for="CSSMeter" class="Percentage">50%</label>
-                <label for="JsMeter" class="Percentage">60%</label>
                 <label for="HTMLMeter" class="Percentage">70%</label>
             </div>
         </section>
+        <br>
         <section>
             <header>
                 <h2 class="TechnologyHeader">Technologies</h2>

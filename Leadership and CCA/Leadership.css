@@ -1,10 +1,12 @@
-    @keyframes DropDown{
+@keyframes DropDown{
     0%{transform: translateY(-100px);}
     100%{transform: translateY(0px);}
 }
 @keyframes MoveLeft{
     from{transform: translateX(1000px);}
     to{transform: translateX(0px);}
+}
+    
 }
 
 
@@ -40,7 +42,7 @@ body{
     background:linear-gradient(to right, #009FFD,#2A2A72);
     object-fit: cover;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Karla', sans-serif;
     animation:Expand 0.5s linear;
     color:white;
 }
@@ -50,14 +52,41 @@ li{
 main{
     position: relative;
     top:5vh;
-    background-color: linear-gradient(to right, #009FFD,#2A2A72);
-    width:min-content;
-    padding-left: 1vw;
-    padding-right: 1vw;
     margin: auto;
 }
 img{
     margin-left: 1vw;
+    transition:0.5s;
+}
+
+
+
+
+
+
+.Certs{
+    padding: 0;
+    max-height: 10vh;
+    max-width:10vw;
+}
+.Flex{
+    display:flex;
+    justify-content: center;
+}
+.AcademicLists h4{
+    display: none;
+}
+.AcademicsLists:hover{
+    background-color: black;
+}
+.AcademicLists:hover img{
+    opacity: 0.5;
+}
+.CCACert{
+    transition: 0.5s;
+}
+#CCAPointsSection div{
+    margin-bottom: 10px;
 }
 
 
@@ -82,36 +111,4 @@ div#DropDownMenu{
     right:0;
     width: min-content;
     background-color: #1565B8;
-}
-
-
-
-
-
-
-.HorizontalCerts{
-    padding:0;
-    max-width:40vw;
-}
-.VerticalCerts{
-    padding:0;
-    height: 70vh;
-}
-.Flex{
-    display:flex;
-    justify-content: center;
-}
-
-
-
-
-
-
-.CCACert{
-    width:50vw;
-    height:100vw;
-}
-#CCACert3{
-    width:80vw;
-    height:40vw;
 }

@@ -19,14 +19,6 @@
         font-size: 15px !important;
     }
 }
-@media only screen and (orientation:portrait) and (max-width:500px) and (min-width:400px){
-}
-@media only screen and (orientation:portrait) and (max-height:700px) and (min-height:600px){
-}
-@media only screen and (orientation:portrait) and (max-height:800px) and (min-height:700px){
-}
-@media only screen and (orientation:portrait) and (min-height:800px){
-}
 
 
 
@@ -98,8 +90,8 @@ div.threeLines{
     text-decoration: none;
     transition: 0.5s;
     float: left;
-    width:max-content;  
-    padding:1vh 1vw;
+    width: max-content;  
+    padding: 1.25vh 1vw;
     background-color:#1c5a9c;   
     color:#009FFD;
 }
