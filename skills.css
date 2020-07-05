@@ -38,6 +38,12 @@
         margin-bottom: 5.5vh !important;
     }
 }
+@media (orientation:portrait){
+    .flex{
+        width: 75vw !important;
+        margin-right: 12.5vw !important;
+    }
+}
 
 
 
@@ -84,7 +90,7 @@ section{
 div#DropDownMenu{
     animation-fill-mode: forwards;
     position: fixed;
-    right:0;
+    right: 0;
     width: min-content;
     background-color: #1565B8;
 }
@@ -106,7 +112,7 @@ div#DropDownMenu{
 .flex{
     display: flex;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 35vw;
     width:50vw;
 }
 .flex *{
@@ -118,6 +124,7 @@ div#DropDownMenu{
 }
 .Lang{
     text-align: right;
+    margin-left: auto;
 }
 .Percentage{
     text-align: left;

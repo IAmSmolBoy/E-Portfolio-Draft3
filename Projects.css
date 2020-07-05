@@ -41,9 +41,8 @@ body{
     object-fit: cover;
     text-align: center;
     font-family: 'Karla', sans-serif;
-    animation:Expand 0.5s linear;
-    overflow: hidden;
-    color:white;
+    animation: Expand 0.5s linear;
+    color: white;
 }
 a{
     text-decoration: none;
@@ -52,24 +51,15 @@ a{
 a:hover{
     text-decoration: underline;
 }
-h2{
-    width:100vw;
-}
-li{
+li , ol{
     padding:0;
-    margin:0;
-    list-style: none;
-}
-ol{
-    padding: 0;
     margin:0;
     list-style: none;
 }
 main{
     position: relative;
-    top:4vh;
-    margin-bottom:0;
-    max-width:78vw  ;
+    top: 4vh;
+    margin-bottom: 0;
 }
 
 
@@ -77,55 +67,6 @@ main{
 
 
 
-#navbar{
-    width: 100vw;
-    left: 0;
-    top:0;
-    position: fixed;
-    height: min-content;
-    z-index: 10000000;
-    margin: 0;
-    background:linear-gradient(to right, #009FFD,#2A2A72);
-    border-bottom: #27284D solid 2px;
-}
-a.NavbarContent{
-    font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    text-align: unset;
-    transition: 1s;
-}
-div#ThreeLines{
-    float: right;
-    margin-right: 20px;
-    width:30px;
-}
-#one{
-    width: 30px;
-}
-#two{
-    width: 20px;
-}
-#three{
-    width: 25px;
-}
-div.threeLines{
-    position: relative;
-    margin-left: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color:#1565B8;
-    border-radius: 20px;
-    transition: 1s;
-    height: 5px;
-}
-#ThreeLines:hover div{
-    width:30px;
-}
-#ThreeLines:hover{
-    cursor:pointer;
-}
 .DropDown{
     display: none;
     text-decoration: none;
@@ -140,26 +81,9 @@ div.threeLines{
 div#DropDownMenu{
     animation-fill-mode: forwards;
     position: fixed;
-    right:0;
+    right: 0;
     width: min-content;
     background-color: #1565B8;
-}
-.OtherDropDown{
-    display: none;
-    text-decoration: none;
-    transition: 0.5s;
-    float: left;
-    width:max-content;
-    padding:1.2vh 1vw;
-    background-color: #2A2A72;
-    color:#1565B8;
-}
-.OtherDropDown:hover{
-    background-color:#1565B8;
-    color:#2A2A72;
-}
-div#OtherDropDownMenu{
-    animation-fill-mode: forwards;
 }
 
 
@@ -170,12 +94,18 @@ div#OtherDropDownMenu{
 
 .HorizontalCerts{
     padding:0;
-    max-width:40vw;
+    max-width:60vw;
 }
 .projectlists{
-    width:100vw;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Projects{
     display:block;
     margin:auto;
+    border: none;
+}
+.projectlists a{
+    margin-bottom: 20px;
 }
