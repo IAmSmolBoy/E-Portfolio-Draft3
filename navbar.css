@@ -14,9 +14,15 @@
     from{transform: translateX(0px);}
     to{transform: translateX(1000px);}
 }
-@media only screen and (orientation:portrait) and (max-width:400px) and (min-width:300px){
+@media only screen and (orientation:portrait){
     nav{
-        font-size: 15px !important;
+        font-size: 12px !important;
+    }
+    #OtherDropDownMenu a{
+        padding-bottom: 10px !important;
+    }
+    #ThreeLines{
+        margin-right: 0 !important;
     }
 }
 

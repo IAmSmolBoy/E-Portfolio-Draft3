@@ -1,16 +1,3 @@
-@media only screen and (orientation:portrait) and (max-width:400px) and (min-width:300px){
-    .Meter{
-        width: 200px !important;
-    }
-    .TechInfo *{
-        width:50% !important;
-    }
-}
-@media only screen and (orientation:portrait) and (max-width:500px) and (min-width:400px){
-    .Meter{
-        width: 250px !important;
-    }
-}
 @media only screen and (orientation:portrait) and (max-height:700px) and (min-height:600px){
     .Meter{
         margin-top: 1.5vh !important;
@@ -42,6 +29,9 @@
     .flex{
         width: 75vw !important;
         margin-right: 12.5vw !important;
+    }
+    progress{
+        width: 50vw !important;
     }
 }
 
@@ -93,6 +83,31 @@ div#DropDownMenu{
     right: 0;
     width: min-content;
     background-color: #1565B8;
+}
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width:20px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color:darkgray;
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 20px;
+    background-color:gray;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
 }
 
 
@@ -171,25 +186,23 @@ label{
 .Technologies{
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .TechnologyHeader{
     margin-top: 10vh;
 }
-.TechInfo{
-    flex: 1 0 50%;
+.TechInfoRight{
+    margin-right: auto;
+    margin-left: 10px;
 }
-.TechInfoLeft *{
+.TechInfoLeft{
     margin-left: auto;
-    display: block;
-    width: 10vw;
     margin-right: 10px;
 }
-.TechInfoRight *{
-    margin-right: auto;
-    display: block;
-    width: 10vw;
-    margin-left: 10px;
+.TechInfo{
+    width: max-content;
+}
+.icons{
+    height: 15vh;
 }

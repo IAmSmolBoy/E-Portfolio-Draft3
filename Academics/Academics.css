@@ -51,13 +51,8 @@ main{
     position: relative;
     top:5vh;
     background-color: linear-gradient(to right, #009FFD,#2A2A72);
-    width:min-content;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    width: min-content;
     margin: auto;
-}
-img{
-    margin-left: 1vw;
 }
 
 
@@ -90,13 +85,15 @@ div#DropDownMenu{
 
 
 
-.HorizontalCerts{
-    padding:0;
-    max-width:40vw;
+.Certs{
+    padding: 0;
+    width: 40vw;
 }
-.VerticalCerts{
-    padding:0;
-    height: 70vh;
+.Left{
+    margin-right: 10px;
+}
+.Flex h4{
+    width: 40vw;
 }
 #achievements{
     background-color: darkgray;

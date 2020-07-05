@@ -75,16 +75,8 @@ body{
     color:white;
     position:relative;
 }
-h2{
-    margin: 0;
-}
-li{
+li , ol{
     padding:0;
-    margin:0;
-    list-style: none;
-}
-ol{
-    padding: 0;
     margin:0;
     list-style: none;
 }
@@ -100,7 +92,7 @@ section{
 
 
 
-h2#Name{
+#Name{
     left: 25%;
     width: 50%;
     top:7vh;
