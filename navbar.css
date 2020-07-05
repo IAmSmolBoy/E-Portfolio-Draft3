@@ -47,14 +47,13 @@ a:hover{
 
 #navbar{
     width: 100vw;
+    right: 0;
     left: 0;
     top:0;
     position: fixed;
     height: min-content;
-    z-index: 10000000;
+    z-index: 999;
     margin: 0;
-    background:linear-gradient(to right, #009FFD,#2A2A72);
-    border-bottom: #27284D solid 2px;
 }
 div#ThreeLines{
     float: right;
@@ -78,6 +77,7 @@ div.threeLines{
     border-radius: 20px;
     transition: 1s;
     height: 5px;
+    z-index: 1000;
 }
 #ThreeLines:hover div{
     width:30px;

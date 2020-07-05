@@ -6,18 +6,22 @@ const OtherDropDown=document.getElementsByClassName("OtherDropDown")
 const OtherDropDownMenu=document.getElementById("OtherDropDownMenu")
 var Dropped=false
 function Dropdown(){
-        if(DropDown[0].style.display!="block"){
+    if(DropDown[0].style.display!="block"){
+        for(i=0;i<DropDown.length;i++){
+            DropDown[i].style.display = "block"
+            Navbar.style.borderBottom = "#27284D solid 2px"
+            Navbar.style.background = "linear-gradient(to right, #009FFD,#2A2A72)"
+        }
+    }
+    else{
+        setTimeout(() => {
             for(i=0;i<DropDown.length;i++){
-                DropDown[i].style.display="block"
+                DropDown[i].style.display="none"
             }
-        }
-        else{
-            setTimeout(() => {
-                for(i=0;i<DropDown.length;i++){
-                    DropDown[i].style.display="none"
-                }
-            }, 250);
-        }
+        }, 250);
+        Navbar.style.borderBottom = ""
+        Navbar.style.background = "none"
+    }
     for(j=0;j<OtherDropDown.length;j++){
         if(OtherDropDown[j].style.display!="block"){
             OtherDropDown[j].style.display="block"

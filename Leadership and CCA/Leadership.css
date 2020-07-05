@@ -66,25 +66,27 @@ img{
 
 
 .Certs{
-    padding: 0;
-    max-height: 10vh;
-    max-width:10vw;
+    padding:0;
+    width: 30vw;
 }
-.Flex{
-    display:flex;
+#achievements{
+    background-color: darkgray;
+}
+.flex{
+    display: flex;
     justify-content: center;
 }
-.AcademicLists h4{
-    display: none;
+h4{
+    width: 30vw;
 }
-.AcademicsLists:hover{
-    background-color: black;
-}
-.AcademicLists:hover img{
-    opacity: 0.5;
+.Left{
+    margin-right: 10px;
 }
 .CCACert{
     transition: 0.5s;
+}
+.SizeUp{
+    transform: scale(2);
 }
 #CCAPointsSection div{
     margin-bottom: 10px;

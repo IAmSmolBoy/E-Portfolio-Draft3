@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -8,6 +20,8 @@ body{
     font-family: 'Oswald', sans-serif;
     animation:Expand 0.5s linear;
     color:white;
+    top: 0;
+    margin: auto;
 }
 li{
     list-style: none;
@@ -59,18 +73,20 @@ div#DropDownMenu{
 
 
 
-.HorizontalCerts{
-    padding:0;
-    max-width:40vw;
-}
 .VerticalCerts{
     padding:0;
-    height: 70vh;
+    width: 40vw;
 }
 #achievements{
     background-color: darkgray;
 }
-.Flex{
+.flex{
     display:flex;
     justify-content: center;
+}
+.Left{
+    margin-right: 10px;
+}
+h4{
+    width: 40vw;
 }

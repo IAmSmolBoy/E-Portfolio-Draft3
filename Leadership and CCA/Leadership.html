@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Leadership.css">
     <link rel="stylesheet" href="../navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" href="/icons/favicon.ico" type="image" sizes="16x16">
     <title>Leadership and CCA</title>
 </head>
 <body>
@@ -31,41 +32,47 @@
             <h2>Leadership and CCA Achievements</h2>
         </header>
         <section id="LeadershipSection">
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">BVSS Model Student Award 2019</h4>
-                    <img src="BVSS Model Student Award 2019.jpg" alt="Cert" class="Certs">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">BVSS Student Leadship Camp 2019</h4>
-                    <img src="BVSS Student Leadship Camp.jpg" alt="Cert" class="AcademicCerts Certs">
-                </li>
+            <div class="flex">
+                <h4 class="AchievementSummary Left">BVSS Model Student Award 2019</h4>
+                <h4 class="AchievementSummary">BVSS Student Leadship Camp 2019</h4>
             </div>
-            <div class="Flex">
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">First Aid Competition</h4>
-                    <img src="FA Comp.jpg" alt="Cert" class="AcademicCerts Certs">
-                </li>
-                <li class="AcademicLists">
-                    <h4 class="AchievementSummary">BVSS Outstanding CCA Member Award 2018</h4>
-                    <img src="BVSS Outstanding CCA Member Award 2018.jpg" alt="Cert" class="Certs">
-                </li>
+            <div class="flex">
+                <img src="BVSS Model Student Award 2019.jpg" alt="Cert" class="Left Certs">
+                <img src="BVSS Student Leadship Camp.jpg" alt="Cert" class="Certs">
+            </div>
+            <div class="flex">
+                <h4 class="AchievementSummary Left">First Aid Competition</h4>
+                <h4 class="AchievementSummary">BVSS Outstanding CCA Member Award 2018</h4>
+            </div>
+            <div class="flex">
+                <img src="FA Comp.jpg" alt="Cert" class="Left Certs">
+                <img src="BVSS Outstanding CCA Member Award 2018.jpg" alt="Cert" class="Certs">
             </div>
         </section>
         <br>
         <section id="CCAPointsSection">
             <h2 id="CCAPoints">CCA contributions and VIA Hours</h2>
+            <p id="Instruction">Click on image to enlarge</p>
             <div class="Flex">
-                <img src="Co-Curriculum Certificate-1.jpg" alt="CCA" id="CCACert1" class="CCACert Certs">
-                <img src="Co-Curriculum Certificate-2.jpg" alt="CCA" id="CCACert2" class="CCACert Certs">
+                    <img onclick="SizeUp('1')" src="Co-Curriculum Certificate-1.jpg" alt="CCA" id="CCACert1" class="CCACert Certs">
+                    <img onclick="SizeUp('2')" src="Co-Curriculum Certificate-2.jpg" alt="CCA" id="CCACert2" class="CCACert Certs">
             </div>
             <div class="Flex">
-                <img src="Co-Curriculum Certificate-3.jpg" alt="CCA" id="CCACert3" class="CCACert Certs">
+                <img onclick="SizeUp('3')" src="Co-Curriculum Certificate-3.jpg" alt="CCA" id="CCACert3" class="CCACert Certs">
             </div>
         </section>
     </main>
     <script src="../navbar.js"></script>
     <script>
+        function SizeUp(i){
+            console.log(event.target.classList[2])
+            if(event.target.classList[2] === "SizeUp"){
+                event.target.className = "CCACert Certs"
+            }
+            else{
+                event.target.className += " SizeUp"
+            }
+        }
     </script>
 </body>
 </html>
