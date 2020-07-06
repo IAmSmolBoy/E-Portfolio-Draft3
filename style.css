@@ -14,7 +14,7 @@
 body{
     background:linear-gradient(to right, #009FFD,#2A2A72);
     object-fit: cover;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Galada', cursive;
     animation:Expand 0.5s linear;
     text-align:center;
     height:100vh;
