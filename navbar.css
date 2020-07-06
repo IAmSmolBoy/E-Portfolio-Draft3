@@ -23,7 +23,7 @@
     }
     #ThreeLines{
         margin-right: 0 !important;
-    }
+    }   
 }
 
 
@@ -37,6 +37,7 @@ a{
     text-decoration: none;
     color:white;
     border: black solid 1px;
+    font-family: 'Karla', sans-serif !important;
 }
 a:hover{
     text-decoration: underline;
