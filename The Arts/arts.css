@@ -6,6 +6,7 @@ body{
     object-fit: cover;
     text-align: center;
     animation:Expand 0.5s linear;
+    font-family: 'Source Sans Pro', sans-serif;
     color:white;
     top: 0;
     margin: auto;

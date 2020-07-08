@@ -43,7 +43,7 @@ body{
     background:linear-gradient(to right, #009FFD,#2A2A72);
     object-fit: cover;
     text-align: center;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     animation:Expand 0.5s linear;
     color:white;
 }
