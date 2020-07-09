@@ -11,21 +11,26 @@
 </head>
 <body>
     <nav id="navbar">
-        <div id="OtherDropDownMenu">
-            <a href="../Projects.html" class="OtherDropDown" id="Projects">Projects</a>
-            <a href="../Leadership and CCA/Leadership.html" class="OtherDropDown" id="Leadership">Leadership and CCA</a>
-            <a href="../skills.html" class="OtherDropDown" id="Skills">Skills and Technology</a>
-        </div>
-        <div id="ThreeLines" onclick="Dropdown()">
-            <div class="threeLines" id="one"></div>
-            <div class="threeLines" id="two"></div>
-            <div class="threeLines" id="three"></div>
-        </div>
-        <div id="DropDownMenu">
-            <a class="DropDown" href="#">To the top</a>
-            <a href="../main.html" class="DropDown">Main Menu</a>
-            <a class="DropDown" id="last" href="../Academics/Academics.html">Academic achievements</a>
-        </div>
+        <ul class="navbar-nav" onclick="Change()">
+            <li class="logo nav-item">
+                <a class="nav-link"><span class="link-text">Hong Rui</span><strong>></strong></a>
+            </li>
+            <li class="nav-item">
+                <a href="Projects.html" class="nav-link" id="Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="Leadership and CCA/Leadership.html" class="nav-link" id="Leadership">Leadership and CCA</a>
+            </li>
+            <li class="nav-item">
+                <a href="skills.html" class="nav-link" id="Skills">Skills and Technology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Academics/Academics.html">Academic achievements</a>
+            </li>
+            <li class="nav-item" id="Last">
+                <a href="../main.html" class="nav-link">back to main menu</a>
+            </li>
+        </ul>
     </nav>
     <main>
         <section id="SportsSection">
@@ -66,6 +71,5 @@
     </main>
     <br>
     <br>
-    <script src="../navbar.js"></script>
 </body>
 </html>

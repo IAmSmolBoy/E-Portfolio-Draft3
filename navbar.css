@@ -37,11 +37,15 @@ a:hover{
 #navbar{
     top: 0;
     left: 0;
-    width: 5rem;
+    width: 7rem;
     height: 100vh;
     position: fixed;
     background-color: #2A2A72;
     transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    text-decoration: none;
 }
 
 .navbar-nav{
@@ -58,20 +62,27 @@ a:hover{
 .nav-item{
     width: 100%;
     transition: 0.5s ease;
+    text-align: center;
 }
 
-.nav-item:last-child{
+#Last{
     position: relative;
     margin-top: auto;
+}
+
+#Projects,#Arts{
+    width: max-content;
 }
 
 .nav-link{
     display: flex;
     align-items: center;
-    height: 5rem;
+    height: 3rem;
     color: white;
     text-decoration: none;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-item:hover{
@@ -80,7 +91,7 @@ a:hover{
 }
 
 .link-text{
-    display: none;
+    visibility: hidden;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -90,7 +101,7 @@ a:hover{
 }
 
 #navbar:hover .link-text{
-    display: block;
+    visibility: visible;
 }
 
 strong{
@@ -100,7 +111,7 @@ strong{
 }
 
 #navbar:hover strong{
-    transform: rotate(360deg);
+    transform: rotate(540deg);
 }
 
 
