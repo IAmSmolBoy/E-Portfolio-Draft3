@@ -6,6 +6,11 @@
     from{transform: translateX(1000px);}
     to{transform: translateX(0px);}
 }
+@media only screen and (orientation:portrait){
+    main{
+        margin-right: auto !important;
+    }
+}
 
 
 
@@ -51,32 +56,8 @@ main{
     position: relative;
     top: 5vh;
     margin-left: auto;
-    margin-right: auto;
-}
+    margin-right: 12vw;
 
-
-
-
-
-
-
-.DropDown{
-    display: none;
-    text-decoration: none;
-    transition: 0.5s;
-    padding:1vh 1vw;
-    color:#009FFD;
-}
-.DropDown:hover{
-    background-color:#009FFD;
-    color:#1565B8;
-}
-div#DropDownMenu{
-    animation-fill-mode: forwards;
-    position: fixed;
-    right:0;
-    width: max-content;
-    background-color: #1565B8;
 }
 
 
@@ -86,7 +67,7 @@ div#DropDownMenu{
 
 .Certs{
     padding: 0;
-    width: 30vw;
+    width: 40vw;
 }
 .Flex{
     display: flex;
@@ -97,5 +78,9 @@ div#DropDownMenu{
     margin-right: 10px;
 }
 h4{
-    width: 30vw;
+    width: 40vw;
+}
+.a{
+    width: 40vw;
+    margin: auto 0;
 }
