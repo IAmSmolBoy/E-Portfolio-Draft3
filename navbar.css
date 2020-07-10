@@ -1,13 +1,32 @@
 @media only screen and (orientation:portrait){
-    nav{
-        font-size: 12px !important;
+    #navbar{
+        width: 100vw !important;
+        height: 3rem !important;
+        font-size: 9px !important;
     }
-    #OtherDropDownMenu a{
-        padding-bottom: 10px !important;
-    }
-    #ThreeLines{
+    .link-text{
+        visibility: visible !important;
         margin-right: 0 !important;
-    }   
+    }
+    .navbar-nav{
+        flex-direction: row !important;
+        height: 100% !important;
+        width: 100vw !important;
+    }
+    .nav-item{
+        height: 100% !important;
+    }
+    .nav-link{
+        align-items: center;
+        height: max-content;
+        color: white;
+        text-decoration: none;
+        margin-top: auto !important;
+        /* margin:auto 0 !important; */
+    }
+    header{
+        margin-top: 100px !important;
+    }
 }
 
 
@@ -23,6 +42,9 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+main{
+    width: min-content !important;
 }
 
 
@@ -42,6 +64,7 @@ a:hover{
     position: fixed;
     background-color: #2A2A72;
     transition: 0.5s ease;
+    z-index: 1;
 }
 
 .nav-link:hover{
@@ -56,6 +79,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    width: 100%;
     transition: 0.5s ease;
 }
 
@@ -100,6 +124,10 @@ a:hover{
     width: 8rem;
 }
 
+.nav-item:hover{
+    cursor: pointer;
+}
+
 #navbar:hover .link-text{
     visibility: visible;
 }
@@ -112,45 +140,4 @@ strong{
 
 #navbar:hover strong{
     transform: rotate(540deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-div#ThreeLines{
-    float: right;
-    margin-right: 30px;
-}
-#one{
-    width: 30px;
-}
-#two{
-    width: 20px;
-}
-#three{
-    width: 25px;
-}
-div.threeLines{
-    position: relative;
-    margin-left: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color:#1565B8;
-    border-radius: 20px;
-    transition: 1s;
-    height: 5px;
-    z-index: 1000;
-}
-#ThreeLines:hover div{
-    width:30px;
-}
-#ThreeLines:hover{
-    cursor:pointer;
 }

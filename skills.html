@@ -11,9 +11,9 @@
 </head>
 <body>
     <nav id="navbar">
-        <ul class="navbar-nav" onclick="Change()">
+        <ul class="navbar-nav">
             <li class="logo nav-item">
-                <a class="nav-link"><span class="link-text">Hong Rui</span><strong>></strong></a>
+                <a class="nav-link" href="index.html"><span class="link-text">Hong Rui</span><strong>></strong></a>
             </li>
             <li class="nav-item">
                 <a href="Projects.html" class="nav-link" id="Projects">Projects</a>
@@ -22,7 +22,7 @@
                 <a href="Leadership and CCA/Leadership.html" class="nav-link" id="Leadership">Leadership and CCA</a>
             </li>
             <li class="nav-item">
-                <a href="../The Arts/arts.html" class="nav-link" id="Arts">The Arts</a>
+                <a href="The Arts/arts.html" class="nav-link" id="Arts">Sports and Arts</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Academics/Academics.html">Academic achievements</a>
@@ -37,41 +37,43 @@
             <header>
                 <h2>Language proficiencies</h2>
             </header>
-            <div class="flex">
-                <label for="CSSMeter" class="CSS Lang">CSS:</label>
-                <progress max=100 min=0 value=30 id="CSSMeter" class="Meter CSS">
-                    <div pseudo="-webkit-progress-inner-element">
-                        <div pseudo="-webkit-progress-value" style="width:80%"></div>
-                    </div>
-                </progress>
-                <label for="CSSMeter" class="Percentage">30%</label>
-            </div>
-            <div class="flex">
-                <label for="pythonMeter" class="python Lang">Python:</label>
-                <progress max=100 min=0 value=50 id="pythonMeter" class="Meter python">
-                    <div pseudo="-webkit-progress-inner-element">
-                        <div pseudo="-webkit-progress-value" style="width:80%"></div>
-                    </div>
-                </progress>
-                <label for="pythonMeter" class="Percentage">50%</label>
-            </div>
-            <div class="flex">
-                <label for="JsMeter" class="Js Lang">Js:</label>
-                <progress max=100 min=0 value=60 id="JsMeter" class="Meter Js">
-                    <div pseudo="-webkit-progress-inner-element">
-                        <div pseudo="-webkit-progress-value" style="width:80%"></div>
-                    </div>
-                </progress>
-                <label for="JsMeter" class="Percentage">60%</label>
-            </div>
-            <div class="flex">
-                <label for="HTMLMeter" class="HTML Lang">HTML:</label>
-                <progress max=100 min=0 value=70 id="HTMLmeter" class="Meter HTML">
-                    <div pseudo="-webkit-progress-inner-element">
-                        <div pseudo="-webkit-progress-value" style="width:80%"></div>
-                    </div>
-                </progress>
-                <label for="HTMLMeter" class="Percentage">70%</label>
+            <div id="flex-column">
+                <div class="flex">
+                    <label for="CSSMeter" class="CSS Lang">CSS:</label>
+                    <progress max=100 min=0 value=30 id="CSSMeter" class="Meter CSS">
+                        <div pseudo="-webkit-progress-inner-element">
+                            <div pseudo="-webkit-progress-value" style="width:80%"></div>
+                        </div>
+                    </progress>
+                    <label for="CSSMeter" class="Percentage">30%</label>
+                </div>
+                <div class="flex">
+                    <label for="pythonMeter" class="python Lang">Python:</label>
+                    <progress max=100 min=0 value=50 id="pythonMeter" class="Meter python">
+                        <div pseudo="-webkit-progress-inner-element">
+                            <div pseudo="-webkit-progress-value" style="width:80%"></div>
+                        </div>
+                    </progress>
+                    <label for="pythonMeter" class="Percentage">50%</label>
+                </div>
+                <div class="flex">
+                    <label for="JsMeter" class="Js Lang">Js:</label>
+                    <progress max=100 min=0 value=60 id="JsMeter" class="Meter Js">
+                        <div pseudo="-webkit-progress-inner-element">
+                            <div pseudo="-webkit-progress-value" style="width:80%"></div>
+                        </div>
+                    </progress>
+                    <label for="JsMeter" class="Percentage">60%</label>
+                </div>
+                <div class="flex">
+                    <label for="HTMLMeter" class="HTML Lang">HTML:</label>
+                    <progress max=100 min=0 value=70 id="HTMLmeter" class="Meter HTML">
+                        <div pseudo="-webkit-progress-inner-element">
+                            <div pseudo="-webkit-progress-value" style="width:80%"></div>
+                        </div>
+                    </progress>
+                    <label for="HTMLMeter" class="Percentage">70%</label>
+                </div>
             </div>
         </section>
         <br>

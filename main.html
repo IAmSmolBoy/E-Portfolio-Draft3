@@ -12,9 +12,9 @@
 </head>
 <body>
     <nav id="navbar">
-        <ul class="navbar-nav" onclick="Change()">
+        <ul class="navbar-nav">
             <li class="logo nav-item">
-                <a class="nav-link"><span class="link-text">Hong Rui</span><strong>></strong></a>
+                <a class="nav-link" href="index.html"><span class="link-text">Hong Rui</span><strong>></strong></a>
             </li>
             <li class="nav-item">
                 <a href="Projects.html" class="nav-link" id="Projects">Projects</a>
@@ -26,7 +26,7 @@
                 <a href="skills.html" class="nav-link" id="Skills">Skills and Technology</a>
             </li>
             <li class="nav-item">
-                <a href="../The Arts/arts.html" class="nav-link" id="Arts">The Arts</a>
+                <a href="The Arts/arts.html" class="nav-link" id="Arts">Sports and Arts</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Academics/Academics.html">Academic achievements</a>
@@ -37,21 +37,28 @@
         <h2 id="Name">Hello there, I am Goh Hong Rui from Bedok View Secondary School, here to introduce myself to you.</h2>
     </header>
     <main id="content">
+        <section id="About">
+            <header>
+                <h2 id="AboutH2">About Me</h2>
+            </header>
+            <p id="biography">I first got interested in programming when my parents enrolled me into programming classes at the age of 14. I learnt python from those classes and the basics of web programming. This is when I truly immersed myself in web programming and I learnt a lot about it from my friends and through pratice. This allowed me to create my own webpage, which you are viewing at this moment.</p>
+        </section>
         <section id="AboutMe">
             <header class="SectionHeaders">
                 <h2 id="Intro">My Personality</h2>
             </header>
-            <ol class="Personalities">Enthusiastic when finding problems and solving them</ol>
-            <ol class="Personalities">Friendly when with familiar faces</ol>
-            <br>
+            <ol>
+                <li class="Personalities">Enthusiastic when finding problems and solving them</li>
+                <li class="Personalities">Friendly when with familiar faces</li>
+            </ol>
             <div id="PersonalityDivDiv">
-                <div class="personalityDiv" id="ProDiv">
+                <div class="personalityDiv Left" id="ProDiv">
                     <h2 id="Pros">Strengths</h2>
-                    <ol class="Pros">Good at anlysing</ol>
+                    <ol class="Pros">Good at analysing</ol>
                     <ol class="Pros">Enthusiastic</ol>
                     <ol class="Pros">Straightforward</ol>
                 </div>
-                <div class="personalityDiv" id="ConDiv">
+                <div class="personalityDiv Right" id="ConDiv">
                     <h2 id="Cons">Weaknesses</h2>
                     <ol class="Cons">Introverted</ol>
                     <ol class="Cons">Forgetful</ol>
@@ -60,17 +67,14 @@
             </div>
         </section>
     </main>
+    <br>
     <section id="SocialSection">
         <h2 id="Socials">Socials</h2>
         <br id="Socialbr">
-        <div class="socialDivDivs">
-            <div class="SocialDivs" id="Gmail">
-                <a href="mailto:gohhongrui@gmail.com" class="Gmail" id="GmailLink"><img src="/icons/Gmail logo.png" alt="Gmail" class="Gmail Socials" id="Gmaillogo"></a>
-                <button onclick="CopyText()" class="Gmail" id="CopyTextButton">Copy email</button>
-            </div>
-            <div class="SocialDivs" id="Github">
-                <a href="https://github.com/IAmSmolBoy" target=_blank id="GithubLink"><img src="/icons/Github logo.png" alt="Github" class="Socials" id="Githublogo"></a>
-            </div>
+        <div id="SocialDiv">
+            <a href="mailto:gohhongrui@gmail.com" class="socialLink Social Left" id="GmailLink"><img src="/icons/Gmail logo.png" alt="Gmail" class="Gmail Socials" id="Gmaillogo"></a>
+            <button onclick="CopyText()" class="Gmail Social middle" id="CopyTextButton">Copy email</button>
+            <a href="https://github.com/IAmSmolBoy" target=_blank class="socialLink Social Right" id="GithubLink"><img src="/icons/Github logo.png" alt="Github" class="Socials" id="Githublogo"></a>
         </div>
     </section>
 

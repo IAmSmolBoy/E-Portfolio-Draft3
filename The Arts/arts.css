@@ -17,11 +17,8 @@ li{
 main{
     position: relative;
     top:5vh;
-    background-color: linear-gradient(to right, #009FFD,#2A2A72);
-    width:min-content;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 img{
     margin-left: 1vw;
@@ -47,24 +44,6 @@ img{
 ::-webkit-scrollbar-track{
     background-color: black;
 }
-.DropDown{
-    display: none;
-    text-decoration: none;
-    transition: 0.5s;
-    padding:1vh 1vw;
-    color:#009FFD;
-}
-.DropDown:hover{
-    background-color:#009FFD;
-    color:#1565B8;
-}
-div#DropDownMenu{
-    animation-fill-mode: forwards;
-    position: fixed;
-    right:0;
-    width: min-content;
-    background-color: #1565B8;
-}
 
 
 
@@ -75,20 +54,18 @@ div#DropDownMenu{
 
 
 
-.VerticalCerts{
+.SportsCerts{
     padding:0;
-    width: 40vw;
-}
-#achievements{
-    background-color: darkgray;
+    width: 30vw;
 }
 .flex{
     display: flex;
     justify-content: center;
+    width: 64vw;
 }
 .Left{
     margin-right: 10px;
 }
 h4{
-    width: 40vw;
+    width: 30vw;
 }

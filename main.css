@@ -18,7 +18,6 @@
     }
     #Gmail button{
         margin: 0 !important;
-        padding: 5px !important;
         margin-left: 5px !important;
         position: relative !important;
         top: 5px !important;
@@ -79,12 +78,20 @@ li , ol{
     padding:0;
     margin:0;
     list-style: none;
+    width: max-content;
 }
 section{
-    position: relative;
-    top:7vh;
-    margin-bottom:0;
-    max-width:78vw ;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+#biography{
+    width: 52vw;
 }
 
 
@@ -93,8 +100,7 @@ section{
 
 
 #Name{
-    left: 25%;
-    width: 50%;
+    width: 50vw;
     top:7vh;
     position: relative;
 }
@@ -108,17 +114,29 @@ section{
     margin: 0;
 }
 .personalityDiv{
-    display:inline-block;
-    top:0;
+    display: flex;
+    flex-direction: column;
     position: relative;
     vertical-align: top;
 }
-#PersonalityDiv{
-    height: min-content;
+#PersonalityDivDiv{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Projects{
     display: block;
 }
+.Left{
+    margin-right: 10px;
+    margin-left: auto;
+}
+.Right{
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+
 
 
 
@@ -126,45 +144,30 @@ section{
 
 
 #SocialSection{
-    position: absolute;
-    right:10vw;
-    top:10vh;
-    vertical-align: middle;
-    text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
-.SocialDivs{
-    position: relative;
-    display: block;
-    width: 50px;
-    margin-left:15px;
-    transition: 0.5s;
-    display: flex;
-}
-.SocialDivs a{
-    border:none;
+img{
+    height: 10vh;
 }
 .Socials{
-    position: relative;
-    width:50px;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
-#CopyTextButton{
-    border:1px solid black;
-    border-radius: 5px;
-    background-color:#1565B8;
-    color: white;
-    height: min-content;
-    margin-left: 20px;
-    margin-top: 1vh;
-    transition: 0.5s;
+#SocialDiv{
+    display: flex;
 }
-#CopyTextButton:hover{
-    background-color:#072b52;
-    cursor:pointer;
+.Left , .middle{
+    margin-right: 5px;
 }
-#CopyTextButton:active{
-    transform: scale(1.5);
+.right , .middle{
+    margin-left: 5px;
+}
+button{
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 img.Socials:hover{
-    transform:scale(1.5)
+    transform: scale(1.5)
 }
