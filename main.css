@@ -84,7 +84,6 @@ body{
 li{
     padding:0;
     margin:0;
-    list-style: none;
     width: max-content;
 }
 section{
@@ -99,6 +98,10 @@ header{
 }
 #biography{
     width: 52vw;
+}
+li{
+    text-align: left;
+
 }
 
 
@@ -143,8 +146,8 @@ header{
     margin-left: 10px;
 }
 .Personalities{
+    width: 25vw;
     margin: 0 auto;
-    width: 60vw;
 }
 
 

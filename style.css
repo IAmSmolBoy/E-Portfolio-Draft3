@@ -23,10 +23,10 @@ body{
 }
 #Quote{
     text-decoration: none;
-    position:absolute;
-    top:45vh;
-    width:47vw;
-    left:26.5vw;
+    position: absolute;
+    top: 45vh;
+    width: 47vw;
+    margin: 0 auto;
     transition: 1s;
     color:white;
 }

@@ -59,25 +59,37 @@
             <h2 id="CCAPoints">CCA contributions and VIA Hours</h2>
             <p id="Instruction">Click on image to enlarge</p>
             <div class="Flex">
-                    <img onclick="SizeUp('1')" src="Co-Curriculum Certificate-1.jpg" alt="CCA" id="CCACert1" class="CCACert Certs">
-                    <img onclick="SizeUp('2')" src="Co-Curriculum Certificate-2.jpg" alt="CCA" id="CCACert2" class="CCACert Certs">
+                    <img onclick="SizeUp()" src="Co-Curriculum Certificate-1.jpg" alt="CCA" id="CCACert1" class="CCACert Certs">
+                    <img onclick="SizeUp()" src="Co-Curriculum Certificate-2.jpg" alt="CCA" id="CCACert2" class="CCACert Certs">
             </div>
             <div class="Flex">
-                <img onclick="SizeUp('3')" src="Co-Curriculum Certificate-3.jpg" alt="CCA" id="CCACert3" class="CCACert Certs">
+                <img onclick="SizeUp()" src="Co-Curriculum Certificate-3.jpg" alt="CCA" id="CCACert3" class="CCACert Certs">
             </div>
         </section>
     </main>
     <script>
-        function SizeUp(i){
-            console.log(event.target.classList[2])
+        function SizeUp(){
             if(event.target.classList[2] === "SizeUp"){
                 event.target.className = "CCACert Certs"
             }
             else{
-                event.target.className += " SizeUp"
+                if(document.getElementsByClassName("SizeUp").length > 0){
+                    event.target.className += " SizeUp"
+                    for(i=0;i<document.getElementsByClassName("SizeUp").length;i++){
+                        if(document.getElementsByClassName("SizeUp")[i] != event.target.className){
+                            document.getElementsByClassName("SizeUp")[i].className = "CCACert Certs"
+                        }
+                        else{
+                            console.log("vcw")
+                            document.getElementsByClassName("SizeUp")[i + 1].className = "CCACert Certs"
+                        }
+                    }
+                }
+                else{
+                    event.target.className += " SizeUp"
+                }
             }
         }
     </script>
-    <script src="../navbar.js"></script>
 </body>
 </html>

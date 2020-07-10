@@ -134,6 +134,10 @@ main{
     visibility: visible;
 }
 
+.logo{
+    display: none;
+}
+
 strong{
     transition: 0.5s ease;
     margin-left: 1rem;
