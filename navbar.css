@@ -21,11 +21,9 @@
         height: max-content;
         color: white;
         text-decoration: none;
-        margin-top: auto !important;
-        /* margin:auto 0 !important; */
     }
     header{
-        margin-top: 100px !important;
+        margin-top: 30px !important;
     }
 }
 
@@ -94,7 +92,7 @@ main{
     margin-top: auto;
 }
 
-#Projects,#Arts{
+#Projects{
     width: max-content;
 }
 
