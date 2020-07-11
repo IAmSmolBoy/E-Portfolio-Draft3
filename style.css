@@ -1,6 +1,6 @@
 @keyframes Contract{
     from{transform: scale(1);}
-    to{transform:scale(0.001);}
+    to{transform:scale(0.0001);}
 }
 
 
@@ -17,20 +17,25 @@ body{
     font-family: 'Alegreya Sans SC', sans-serif;
     animation:Expand 0.5s linear;
     text-align:center;
-    height:100vh;
+    height: 100vh;
     overflow:hidden;
     color:white;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
-#Quote{
+main{
+    width: 40vw;
+}
+a{
     text-decoration: none;
-    position: absolute;
-    top: 45vh;
-    width: 47vw;
-    margin: 0 auto;
-    transition: 1s;
     color:white;
+    position: absolute;
 }
-#Quote:hover{
+a:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+.Contracting{
+    animation: Contract 0.5s linear forwards;
 }

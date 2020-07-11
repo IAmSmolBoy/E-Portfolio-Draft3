@@ -9,13 +9,12 @@
     <title>Welcome</title>
 </head>
 <body>
-    <div id="anchorcontainer">
-        <a href="#Quote" id="Quote">"The definition of insanity is doing the same thing over and over again and expecting different results." -Albert Einstein</a>
-    </div>
+    <main>
+        <a id="Quote">"The definition of insanity is doing the same thing over and over again and expecting different results." -Albert Einstein</a>
+    </main>
     <script>
         document.getElementById("Quote").addEventListener("click",(e)=>{
-            document.getElementById("Quote").style.animation="Contract 0.5s linear"
-            document.getElementById("Quote").style.animationFillMode="forwards"
+            document.getElementById("Quote").className += "Contracting"
             setTimeout(function(){
                 document.location.href="main.html"
             },750)
