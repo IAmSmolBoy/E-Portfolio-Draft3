@@ -73,6 +73,11 @@ main{
     text-decoration: none;
 }
 
+.z{
+    width: max-content;
+    margin: 0 auto;
+}
+
 .navbar-nav{
     list-style: none;
     padding: 0;
@@ -97,18 +102,15 @@ main{
 }
 
 #Projects , #Arts{
-    width: max-content;
+    width: 100%;
 }
 
 .nav-link{
-    display: flex;
-    align-items: center;
     height: 3rem;
     color: white;
     text-decoration: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
 .nav-item:hover{
