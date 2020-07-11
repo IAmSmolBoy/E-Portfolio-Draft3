@@ -86,7 +86,7 @@ h4{
     transition: 0.5s;
 }
 .SizeUp{
-    transform: scale(2);
+    transform: scale(1.5);
 }
 #CCAPointsSection div{
     margin-bottom: 10px;

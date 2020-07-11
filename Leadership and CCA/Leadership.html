@@ -74,17 +74,8 @@
             }
             else{
                 if(document.getElementsByClassName("SizeUp").length > 0){
+                    document.getElementsByClassName("SizeUp")[0].className = "CCACert Certs"
                     event.target.className += " SizeUp"
-                    for(i=0;i<document.getElementsByClassName("SizeUp").length;i++){
-                        if(document.getElementsByClassName("SizeUp")[i] != event.target.className){
-                            console.log(event.target,document.getElementsByClassName("SizeUp")[i])
-                            document.getElementsByClassName("SizeUp")[i].className = "CCACert Certs"
-                        }
-                        else{
-                            console.log("vcw")
-                            document.getElementsByClassName("SizeUp")[i + 1].className = "CCACert Certs"
-                        }
-                    }
                 }
                 else{
                     event.target.className += " SizeUp"
