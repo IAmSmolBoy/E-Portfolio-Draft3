@@ -41,6 +41,19 @@
     #biography{
         width: 75vw !important;
     }
+    main{
+        margin: 0 auto !important;
+    }
+    ul{
+        padding: 0;
+    }
+    #AboutMe > ul > li{
+        padding: 0;
+        width: 50vw !important;
+    }
+    .Right > ul{
+        padding-left: 10px;
+    }
 }
 
 
@@ -80,6 +93,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     color:white;
     position:relative;
+    margin: 0;
 }
 li{
     padding:0;
