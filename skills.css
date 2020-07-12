@@ -149,7 +149,6 @@ progress[value] {
 ::-webkit-progress-value {
     background-color: #009FFD;
     border-radius: 20px;
-
 }
 label{
     margin-top: 2.5vh;
