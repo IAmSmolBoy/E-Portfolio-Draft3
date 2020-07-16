@@ -1,37 +1,10 @@
-@media only screen and (orientation:portrait) and (max-height:700px) and (min-height:600px){
-    .Meter{
-        margin-top: 1.5vh !important;
-        margin-bottom: 4vh !important;
-    }
-    label{
-        margin-bottom: 4vh !important;
-    }
-}
-@media only screen and (orientation:portrait) and (max-height:800px) and (min-height:700px){
-    .Meter{
-        margin-top: 0.5vh !important;
-        margin-bottom: 4.5vh !important;
-    }
-    label{
-        margin-bottom: 5vh !important;
-    }
-}
-@media only screen and (orientation:portrait) and (min-height:800px){
-    .Meter{
-        margin-top: 1vh !important;
-        margin-bottom: 4.5vh !important;
-    }
-    label{
-        margin-bottom: 5.5vh !important;
-    }
-}
 @media (orientation:portrait){
-    .flex{
-        width: 75vw !important;
-        margin-right: 12.5vw !important;
-    }
-    progress{
+    progress[value]{
         width: 50vw !important;
+        height: 6vh;
+    }
+    label{
+        height: 6vh !important;
     }
 }
 
@@ -103,44 +76,38 @@ main{
 
 
 
-.MeterDiv{
-    position: relative;
-    font-size:20px;
-    top:10vh;
-}
 .flex{
     display: flex;
-    width: 19vw;
+}
+.Langs{
+    margin-left: auto;
+    margin-right: 0.5vw;
+}
+.percents{
+    margin-right: auto;
+    margin-left: 0.5vw;
 }
 #flex-column{
     display: flex;
     flex-direction: column;
     width: min-content;
     align-items: center;
-    margin-right: auto;
-}
-.flex *{
-    vertical-align: middle;
 }
 .Lang, .Percentage{
     position: relative;
-    top: 1vh;
 }
-.Lang{
-    text-align: right;
-    margin-left: auto;
+label{
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    margin: 1vh 0;
 }
-.Percentage{
-    text-align: left;
-}
-progress[value] {
+progress{
     -webkit-appearance: none;
     width: 10vw;
-    height:4.5vh;
-    margin-top: 1vh;
-    margin-bottom: 1.75vh;
+    height:4vh;
     position: relative;
-    top:2.5vh;
+    margin: 1vh 0;
 }
 ::-webkit-progress-bar{
     background-color: #2A2A72;
@@ -149,17 +116,6 @@ progress[value] {
 ::-webkit-progress-value {
     background-color: #009FFD;
     border-radius: 20px;
-}
-label{
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
-}
-.Meters{
-    position: relative;
-    width:min-content;
-    margin:auto;
-    top: 10vh;
-    font-size:20px;
 }
 
 
