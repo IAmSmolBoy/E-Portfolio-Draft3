@@ -25,12 +25,11 @@ body{
     align-items: center;
 }
 main{
-    width: 40vw;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
     color:white;
-    position: absolute;
 }
 a:hover{
     cursor: pointer;
