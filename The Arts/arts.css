@@ -20,6 +20,12 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+h4{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    width: 30vw;
+}
 img{
     margin-left: 1vw;
 }
@@ -65,7 +71,4 @@ img{
 }
 .Left{
     margin-right: 10px;
-}
-h4{
-    width: 30vw;
 }

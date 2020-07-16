@@ -79,6 +79,9 @@ img{
     justify-content: center;
 }
 h4{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
     width: 30vw;
 }
 .Left{

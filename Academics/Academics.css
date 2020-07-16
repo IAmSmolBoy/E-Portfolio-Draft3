@@ -63,7 +63,7 @@ main{
 
 .Certs{
     padding: 0;
-    width: 40vw;
+    width: 30vw;
 }
 .Flex{
     display: flex;
@@ -74,9 +74,12 @@ main{
     margin-right: 10px;
 }
 h4{
-    width: 40vw;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    width: 30vw;
 }
 .a{
-    width: 40vw;
+    width: 30vw;
     margin: auto 0;
 }
