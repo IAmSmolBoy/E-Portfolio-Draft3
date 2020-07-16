@@ -190,24 +190,22 @@ li{
     margin-right: auto;
 }
 img{
-    height: 10vh;
+    height: 5vh;
 }
 .Socials{
     transition: 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
 }
 #SocialDiv{
     display: flex;
 }
-.Left , .middle{
-    margin-right: 5px;
-}
-.right , .middle{
-    margin-left: 5px;
-}
 button{
-    height: 5vh;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0;
+    padding: 5px;
+}
+button:hover{
+    cursor: pointer;
 }
 img.Socials:hover{
     transform: scale(1.5)
