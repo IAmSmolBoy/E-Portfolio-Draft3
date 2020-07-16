@@ -3,37 +3,6 @@
     to{transform:scale(1)}
 }
 @media only screen and (orientation:portrait){
-    #SocialSection{
-        position: relative !important;
-        top: 15vh !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    #github{
-        margin: 0 !important;
-    }
-    .SocialDivs{
-        display: inline-block !important;
-        width: min-content !important;
-    }
-    #Gmail button{
-        margin: 0 !important;
-        margin-left: 5px !important;
-        position: relative !important;
-        top: 5px !important;
-    }
-    #Gmail{
-        display: flex !important;
-    }
-    #Gmail a{
-        margin-right: 10px !important;
-    }
-    .socialDivDivs{
-        display: flex !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        width: min-content!important;
-    }
     ol{
         list-style: none;
         padding: 0;
@@ -53,6 +22,9 @@
     }
     .Right > ul{
         padding-left: 10px;
+    }
+    br{
+        height: 1px;
     }
 }
 
