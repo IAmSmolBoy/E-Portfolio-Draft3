@@ -26,6 +26,16 @@
     br{
         height: 1px;
     }
+    div#SocialDiv2{
+        flex-direction: column;
+        width: max-content;
+    }
+    button{
+        width: min-content !important;
+    }
+    div.A{
+        margin-right: 4vw !important;
+    }
 }
 
 
@@ -144,18 +154,6 @@ li{
 
 
 
-#Testimonial{
-    position: relative;
-}
-
-
-
-
-
-
-
-
-
 #SocialSection{
     width: max-content;
     margin-left: auto;
@@ -164,21 +162,32 @@ li{
 img{
     height: 5vh;
 }
-.Socials{
-    transition: 0.5s ease;
-    margin-left: auto;
-    margin-right: auto;
-}
-#SocialDiv{
+#SocialDiv1{
     display: flex;
 }
+#SocialDiv2{
+    flex-direction: column;
+    width: 10vw;
+}
+.Socials{
+    transition: 0.5s ease;
+}
+.Socials:hover{
+    transform: scale(1.5);
+}
+#GmailLink{
+    margin-right: 0.5vw;
+}
 button{
-    margin: auto 0;
-    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: rgb(64, 64, 64);
+    color: white;
+    transition: 0.5s ease;
+    margin-left: 0.5vw;
+    width: 5vw;
 }
 button:hover{
-    cursor: pointer;
-}
-img.Socials:hover{
-    transform: scale(1.5)
+    background: rgb(128, 128, 128);
+    color: black;
 }

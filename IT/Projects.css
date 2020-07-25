@@ -69,30 +69,6 @@ main{
 
 
 
-.DropDown{
-    display: none;
-    text-decoration: none;
-    transition: 0.5s;
-    padding:1vh 1vw;
-    color:#009FFD;
-}
-.DropDown:hover{
-    background-color:#009FFD;
-    color:#1565B8;
-}
-div#DropDownMenu{
-    animation-fill-mode: forwards;
-    position: fixed;
-    right: 0;
-    width: min-content;
-    background-color: #1565B8;
-}
-
-
-
-
-
-
 
 .HorizontalCerts{
     padding:0;
@@ -107,6 +83,7 @@ div#DropDownMenu{
     display:block;
     margin:auto;
     border: none;
+    width: max-content;
 }
 .projectlists a{
     margin-bottom: 20px;

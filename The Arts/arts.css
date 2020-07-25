@@ -21,9 +21,6 @@ main{
     margin-right: auto;
 }
 h4{
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
     width: 30vw;
 }
 img{
