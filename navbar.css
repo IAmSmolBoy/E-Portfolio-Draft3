@@ -47,6 +47,7 @@ a:hover{
 }
 main{
     width: min-content !important;
+    margin-bottom: 10px;
 }
 
 
