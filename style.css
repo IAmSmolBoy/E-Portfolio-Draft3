@@ -47,5 +47,5 @@ a:hover{
     animation: Epilepsy 1s linear;
 }
 .Contracting{
-    animation: Contract 0.5s linear forwards;
+    animation: Contract 0.5s linear  infinite forwards;
 }
