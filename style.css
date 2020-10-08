@@ -44,7 +44,7 @@ a{
 a:hover{
     cursor: pointer;
     text-decoration: underline;
-    animation: epilepsy 1s linear;
+    animation: Epilepsy 1s linear;
 }
 .Contracting{
     animation: Contract 0.5s linear forwards;
