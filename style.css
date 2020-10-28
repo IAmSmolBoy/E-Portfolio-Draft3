@@ -2,7 +2,7 @@
     from{transform: scale(1);}
     to{transform:scale(0.0001);}
 }
-@keyframes Epilepsy {
+/* @keyframes Epilepsy {
     0% {color: white;}
     12.5% {color: red;}
     25% {color: orange;}
@@ -12,7 +12,7 @@
     75% {color: indigo;}
     82.5% {color: violet;}
     100% {color: white;}
-}
+} */
 
 
 
@@ -44,7 +44,7 @@ a{
 a:hover{
     cursor: pointer;
     text-decoration: underline;
-    animation: Epilepsy 1s infinite linear;
+    /* animation: Epilepsy 1s infinite linear; */
 }
 .Contracting{
     animation: Contract 0.5s linear  infinite forwards;
