@@ -144,6 +144,9 @@ progress{
     margin-left: auto;
     margin-right: 10px;
 }
+.TechInfoMiddle {
+    margin: 0 auto;
+}
 .TechInfo{
     width: max-content;
 }
